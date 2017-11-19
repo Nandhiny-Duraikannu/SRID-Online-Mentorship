@@ -1,0 +1,84 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body, html
+{
+	background-color: #F6F4F1 !important;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+
+main {
+	flex: 1 0 auto;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.page-footer {
+	padding-bottom: 20px;
+	background-color: #E1DEDC;
+}
+.btn-large {
+	width: 50vw;
+}
+a {
+	color: #88AAA9;
+}
+h1 {
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 23px;
+	color: black;
+}
+h2 {
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 23px;
+	color: black;
+}
+h3 {
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+	color: black;
+}
+p {
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+	color: black;
+}
+blockquote {
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+	color: black;
+}
+pre {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+	color: black;
+}
