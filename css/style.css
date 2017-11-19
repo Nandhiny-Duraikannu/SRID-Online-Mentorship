@@ -31,6 +31,40 @@ main {
 .btn-large {
 	width: 50vw;
 }
+nav {
+	background-color: #6C567B;
+}
+nav .brand-logo {
+	font-size: 1.5rem;
+}
+nav.clean{
+    background: none;
+    box-shadow: none;
+    padding-left: 10px;
+}
+/*.tabs {
+	background-color: #F6F4F1;
+}*/
+.tabs .indicator{
+    background-color: #88AAA9;
+}
+.breadcrumb {
+	font-size: 15px;
+}
+.breadcrumb:before {
+	font-size: 15px;
+    color: rgba(0,0,0,0.7);
+}
+
+.breadcrumb, .breadcrumb:last-child {
+   color: rgba(0,0,0,1);
+}
+
+#test-swipe-1, #test-swipe-2 {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 a {
 	color: #88AAA9;
 }
@@ -41,6 +75,8 @@ h1 {
 	font-weight: bold;
 	line-height: 23px;
 	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 h2 {
 	font-size: 20px;
@@ -49,6 +85,8 @@ h2 {
 	font-weight: bold;
 	line-height: 23px;
 	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 h3 {
 	font-size: 17px;
@@ -57,6 +95,8 @@ h3 {
 	font-weight: 500;
 	line-height: 23px;
 	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 p {
 	font-size: 14px;
