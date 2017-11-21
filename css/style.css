@@ -122,3 +122,18 @@ pre {
 	line-height: 23px;
 	color: black;
 }
+<<<<<<< HEAD
+=======
+
+
+.container-chart {
+	width: 80%;
+	margin: 20px auto;
+}
+
+.p-chart {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 140px;
+}
+>>>>>>> develop
