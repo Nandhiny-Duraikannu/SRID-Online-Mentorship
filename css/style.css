@@ -1,0 +1,135 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body, html
+{
+	background-color: #F6F4F1 !important;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+
+main {
+	flex: 1 0 auto;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.page-footer {
+	padding-bottom: 20px;
+	background-color: #E1DEDC;
+}
+.btn-large {
+	width: 50vw;
+}
+nav {
+	background-color: #6C567B;
+}
+nav .brand-logo {
+	font-size: 1.5rem;
+}
+nav.clean{
+    background: none;
+    box-shadow: none;
+    padding-left: 10px;
+}
+/*.tabs {
+	background-color: #F6F4F1;
+}*/
+.tabs .indicator{
+    background-color: #88AAA9;
+}
+.breadcrumb {
+	font-size: 15px;
+}
+.breadcrumb:before {
+	font-size: 15px;
+    color: rgba(0,0,0,0.7);
+}
+
+.breadcrumb, .breadcrumb:last-child {
+   color: rgba(0,0,0,1);
+}
+
+#test-swipe-1, #test-swipe-2 {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+a {
+	color: #88AAA9;
+}
+h1 {
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 23px;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+h2 {
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 23px;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+h3 {
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+p {
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+	color: black;
+}
+blockquote {
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+	color: black;
+}
+pre {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+	color: black;
+}
+
+.container-chart {
+	width: 80%;
+	margin: 20px auto;
+}
+
+.p-chart {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 140px;
+}
