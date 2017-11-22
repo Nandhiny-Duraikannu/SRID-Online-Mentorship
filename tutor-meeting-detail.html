@@ -77,10 +77,22 @@
                 </div>
             </div>
             <div class="row">
-                <a class="waves-effect waves-light btn col s12" onclick="confirmMeeting()">Confirm</a>
+                <div class="input-field col s12">
+                    <input type="text" class="validate" value="" disabled id="meetingDateConfirmed">
+                    <label for="meetingDate">Date</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" class="validate" value="" disabled>
+                    <label for="date">Date</label>
+                </div>
+                </div>
+            <div class="row">
+                <a class="waves-effect waves-light btn col s12" onclick="">Joining Meeting</a>
             </div>   
             <div class="row">
-                <a class="waves-effect waves-light btn col s12">Cancel</a>
+                <a class="waves-effect waves-light btn col s12">CANCEL</a>
             </div>
         </div> 
     </main>
@@ -100,8 +112,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-    <script src="js/datepicker.js"></script>
-    <script src="js/toast.js"></script>
+    <script src="js/initMeetingDetail.js"></script>
 
 </body>
 
