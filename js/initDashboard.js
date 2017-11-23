@@ -20,12 +20,25 @@ $(function() {
                 <i class="material-icons">cloudy</i>C1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "student" && events === "default" && courses === "default") {
-            eventsDom.append('<div class="collapsible-header">Cloud Computing Phase 3 Due Nov 10,3 pm</div>');
-            coursesDom.append('<div class="card blue-grey darken-1">\
-                <div class="card-content white-text" >\
-                <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                <i class="material-icons"></i>C4. Machine Learning</a></span>\
-                </div></div>');
+            eventsDom
+                .append('<div class="collapsible-header">Cloud Computing Phase 3 Due Nov 10,3 pm</div>');
+            coursesDom
+                .append('<div class="card blue-grey darken-1">\
+                    <div class="card-content white-text" >\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <i class="material-icons">cloud</i>C1. Cloud Computing</a></span>\
+                    </div></div>')
+                .append('<div class="card blue-grey darken-1">\
+                    <div class="card-content white-text" >\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <i class="material-icons">insert_chart</i>C4. Machine Learning</a></span>\
+                    </div></div>')
+                .append('<div class="card blue-grey darken-1">\
+                    <div class="card-content white-text" >\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <i class="material-icons">trending_up</i>C5. An Intuitive Introduction to Probability</a></span>\
+                    </div></div>');
+                    
         } else if (status === "student" && events === "meeting" && courses === "default") {
             eventsDom
                 .append('<div class="collapsible-header">Meeting with Professor Emily Nov 10,12 pm</div>')
