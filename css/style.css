@@ -14,7 +14,6 @@ body, html
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 
-
 main {
 	flex: 1 0 auto;
 }
@@ -41,6 +40,7 @@ nav.clean{
     background: none;
     box-shadow: none;
     padding-left: 10px;
+    padding-right: 10px;
 }
 /*.tabs {
 	background-color: #F6F4F1;
