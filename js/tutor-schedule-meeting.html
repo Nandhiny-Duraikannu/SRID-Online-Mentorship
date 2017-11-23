@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Online Mentorship</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Online Mentorship</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="">Profile</a>
+                </li>
+                <li>
+                    <a href="">My Courses</a>
+                </li>
+                <li>
+                    <a href="">Forum</a>
+                </li>
+                <li>
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <a href="">Profile</a>
+                </li>
+                <li>
+                    <a href="">My Courses</a>
+                </li>
+                <li>
+                    <a href="">Forum</a>
+                </li>
+                <li>
+                    <a href="">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="clean">
+        <div class="nav-wrapper">
+            <div class="col s12">
+                <a href="#!" class="breadcrumb">...</a>
+                <a href="#!" class="breadcrumb">Cloud Computing</a>
+                <a href="#!" class="breadcrumb">Grades</a>
+                <a href="#!" class="breadcrumb">Meeting</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <label for="date" class="">Date</label>
+                    <input type="text" class="datepicker" id="meetingDate"/>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Meeting Title" type="text" class="validate" value="">
+                        <label for="meeting_title">Meeting Title</label>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="textarea1" placeholder="description" class="materialize-textarea"></textarea>
+                    <label for="description">Description</label>
+                </div>
+            </div>
+            <div class="row">
+                <a class="waves-effect waves-light btn col s12" onclick="confirmMeeting()">Confirm</a>
+            </div>   
+            <div class="row">
+                <a class="waves-effect waves-light btn col s12">Cancel</a>
+            </div>
+        </div> 
+    </main>
+    <footer class="page-footer">
+        <div class="container linkType center">
+            <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> |
+            <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
+            <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
+            <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/toast.js"></script>
+
+</body>
+
+</html>
