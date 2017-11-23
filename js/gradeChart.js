@@ -1,4 +1,4 @@
-let canvas = $('myChart');
+let canvas = $('#myChart');
 let data = {
     labels: ["Quiz 1", "Quiz 2", "Quiz 3", "Quiz 4"],
     datasets: [
