@@ -6,8 +6,8 @@
     <title>Online Mentorship</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <a href="#!" class="breadcrumb">...</a>
             <a href="#!" class="breadcrumb">Students</a>
             <a href="#!" class="breadcrumb">Andrew</a>
-            <a href="#!" class="breadcrumb">Quiz3</a>
+            <a href="#!" class="breadcrumb" id="quizBreadCrumb"></a>
         </div>
     </div>
 </nav>
@@ -43,21 +43,13 @@
 
 
 <main >
-    <div class="container">
-        <h2>Quiz 3 Solution</h2>
+<div class="container">
+    <h2 id="quizTitle"></h2>
 
-        <div class="card-panel">
-            <p> Q1: What is GCP?</p>
-            <p> Answer: Google Cloud Platform</p>
-            <p> Comment: Correct</p><br>
-            <p> Q2: What is AWS?</p>
-            <p> Answer: Awesome Wow System</p>
-            <p> Comment: InCorrect. Answer is Amazon web services.</p><br>
-            <p> Q3: What are the advantages of using cloud computing?</p>
-            <p> Answer: Data backup and storage of data, Powerful server capabilities, SaaS</p>
-            <p> Comment: Correct</p>
-        </div>
+    <div class="card-panel" id = "quizContent">
+        
     </div>
+</div>
 
 
 </main>
@@ -75,8 +67,9 @@
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/init.js"></script>
+<script src="../js/initQuizContent.js"></script>
 
 
 </body>
