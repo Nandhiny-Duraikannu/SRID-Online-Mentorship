@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Online Mentorship</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Online Mentorship</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="">Profile</a></li>
+        <li><a href="">My Courses</a></li>
+        <li><a href="">Forum</a></li>
+        <li><a href="">Logout</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="">Profile</a></li>
+        <li><a href="">My Courses</a></li>
+        <li><a href="">Forum</a></li>
+        <li><a href="">Logout</a></li>
+      </ul>
+    </div>
+  </nav>  
+  <nav class="clean">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="dashboard.html" class="breadcrumb">Dashboard</a>
+        <a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>
+        <a class="breadcrumb">View Lecture</a>
+      </div>
+    </div>
+  </nav>
+  <h2 class="center" id="courseTitle"></h2>
+  <div class="video-container">
+    <iframe id="videoLink" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <main>
+    <ul id="tabs-swipe-demo" class="tabs">
+      <li class="tab col s3"><a href="#test-swipe-1"><p>Course Content</p></a></li>
+      <li class="tab col s3"><a href="#test-swipe-2"><p>Reference Video</p></a></li>
+    </ul>
+    <div id="test-swipe-1" class="col s12">    
+      <!-- <table class="centered striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Content</th>              
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.1</td>
+            <td>AWS</td>            
+          </tr>
+          <tr>
+            <td>1.2</td>
+            <td>GCP</td>        
+          </tr>
+          <tr>
+            <td>1.3</td>
+            <td>Azure</td>        
+          </tr>
+        </tbody>
+      </table> -->
+    </div>
+    <div id="test-swipe-2" class="col s12">
+      <!-- <table class="centered striped">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Topic</th>              
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Socket</td>
+            <td>TCP/IP</td>  
+            <td><a href="videoSP.html">15:30 - 21:09</a></td>            
+          </tr>
+          <tr>
+            <td>AWS Security</td>
+            <td>Inbound Setting</td>  
+            <td><a>07:30 - 11:49</a></td> 
+          </tr>
+          <tr>
+            <td>GCP Training</td>
+            <td>Terminal</td>  
+            <td><a>23:29 - 29:52</a></td> 
+          </tr>
+        </tbody>
+      </table> -->
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container linkType center">
+      <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> | 
+      <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> | 
+      <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> | 
+      <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/initVideo.js"></script>
+
+  </body>
+</html>
