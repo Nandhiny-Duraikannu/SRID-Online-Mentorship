@@ -4,7 +4,6 @@ function setQuizContent(ind) {
 
 function redirect(ind) {
     if (typeof(Storage) !== "undefined") {
-        // console.log(ind)
         localStorage.setItem('quizInd', ind);
         window.location = "../html/view-quiz-content.html";
     } else {
