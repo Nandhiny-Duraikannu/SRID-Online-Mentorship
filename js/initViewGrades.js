@@ -12,7 +12,7 @@ $(function() {
                 .append('<a class="breadcrumb">Andrew</a>');
             tutorBtnDom
                 .append('<div class="row center"><a href="../html/add-grades.html" class="waves-effect waves-light btn col s12">Add Grades</a></div>\
-                        <div class="row center"><a href="tutor-schedule-meeting.html" class="waves-effect waves-light btn col s12">Schedule Meeting</a></div>');
+                        <div class="row center"><a href="schedule-meeting.html" class="waves-effect waves-light btn col s12">Schedule Meeting</a></div>');
 
             
         } else {
