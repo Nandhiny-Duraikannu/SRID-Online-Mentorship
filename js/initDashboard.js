@@ -24,7 +24,7 @@ $(function() {
             eventsDom.append("<div class='collapsible-header'>No upcoming events!</div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
             <div class="card-content white-text" >\
-                <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                <span class="card-title" ><a href="course-dashboard.html" class="grey-text text-lighten-3" href="CC_Tutor.html">\
                 <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "student" && events === "default" && courses === "default") {
