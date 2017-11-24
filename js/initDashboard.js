@@ -20,7 +20,7 @@ $(function() {
                 <i class="material-icons">cloud</i> sC1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "tutor" && events === "default" && courses === "addedCourse") {
-            Materialize.toast('Successfully regist the course!', 5000);
+            Materialize.toast('Successfully register the course!', 5000);
             eventsDom.append("<div class='collapsible-header'>No upcoming events!</div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
             <div class="card-content white-text" >\
