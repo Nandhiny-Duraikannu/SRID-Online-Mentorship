@@ -1,14 +1,7 @@
 $(function() {
     function init() {
-        let meetingDate = localStorage.getItem("meetingDate");
-        let breadcrumbDom = $("#meetingInformationBreadCrumb");
+        let breadcrumbDom = $("#scheduleMeetingBreadCrumb");
         let status = localStorage.getItem("status");
-
-        if (meetingDate === "undefined") {
-            meetingDate = "no date picked!";
-        }
-        $('#meetingDateConfirmed').val(meetingDate);
-        Materialize.toast('Transcript added in XXX/XXX/XXX!', 5000);
 
         if (status === "tutor") {
             breadcrumbDom
@@ -22,7 +15,7 @@ $(function() {
                 .append('<a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>')
                 .append('<a class="breadcrumb">Meeting</a>');
         }
-        
+
     }
     init();
 });
