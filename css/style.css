@@ -28,6 +28,10 @@ main {
 	width: 50vw;
 }
 
+#redName {
+	color: red;
+}
+
 nav {
 	background-color: #6C567B;
 }

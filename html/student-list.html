@@ -14,10 +14,10 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Online Mentorship</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse">
         <i class="material-icons">menu</i>
       </a>
+      <a href="#" class="brand-logo">Online Mentorship</a>
       <ul class="right hide-on-med-and-down">
         <li>
           <a href="">Profile</a>
@@ -51,39 +51,32 @@
   <nav class="clean">
     <div class="nav-wrapper">
       <div class="col s12">
-        <a href="#!" class="breadcrumb">...</a>
-        <a href="#!" class="breadcrumb">Cloud Computing</a>
-        <a href="#!" class="breadcrumb">Grades</a>
-        <a href="#!" class="breadcrumb">Meeting</a>
+        <a href="#!" class="breadcrumb">Dashboard</a>
+        <a href="#!" class="breadcrumb">Student</a>
       </div>
     </div>
   </nav>
-
   <main>
     <div class="container">
       <div class="row">
-        <div class="col s12">
-          <label for="date" class="">Date</label>
-          <input type="text" class="datepicker" id="meetingDate" />
+        <div class="col s12 m6">
+          <div class='collapsible-header'>Note : Students marked in red need their performance evaluated!</div>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="Meeting Title" type="text" class="validate" value="">
-          <label for="meeting_title">Meeting Title</label>
-        </div>
+        <a href="tutor-view-grades.html" class="waves-effect waves-light btn col s12" id="redName">Andrew</a>
       </div>
       <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" placeholder="description" class="materialize-textarea"></textarea>
-          <label for="description">Description</label>
-        </div>
+        <a class="waves-effect waves-light btn col s12">Jon Snow</a>
       </div>
       <div class="row">
-        <a class="waves-effect waves-light btn col s12" onclick="confirmMeeting()">Confirm</a>
+        <a class="waves-effect waves-light btn col s12">Harry Potter</a>
       </div>
       <div class="row">
-        <a class="waves-effect waves-light btn col s12">Cancel</a>
+        <a class="waves-effect waves-light btn col s12">Alice Cooper</a>
+      </div>
+      <div class="row">
+        <a class="waves-effect waves-light btn col s12">Emma Stone</a>
       </div>
     </div>
   </main>
@@ -98,12 +91,8 @@
 
 
   <!--  Scripts-->
-
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
   <script src="../js/materialize.js"></script>
-  <script src="../js/datepicker.js"></script>
-  <script src="../js/toast.js"></script>
 
 </body>
 

@@ -6,7 +6,7 @@ $(function() {
             buttonDom
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12">lecture videos</a></div>')
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12">create quiz</a></div>')
-                .append('<div class="row"><a class="waves-effect waves-light btn col s12">student list</a></div>')
+                .append('<div class="row"><a href="student-list.html" class="waves-effect waves-light btn col s12">student list</a></div>')
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12">view transcript</a></div>');
         } else {
             buttonDom
