@@ -12,12 +12,20 @@ $(function() {
                 <div class="card-content white-text">\
                 <span class="card-title" >No courses</span>\
                 </div></div>');
-        } else if (status === "tutor" && events === "meeting" && courses === "registed") {
+        } else if (status === "tutor" && events === "meeting" && courses === "default") {
             eventsDom.append("<div class='collapsible-header'>1:1 meeting with Andrew</div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
             <div class="card-content white-text" >\
                 <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                <i class="material-icons">cloudy</i>C1. Cloud Computing</a></span>\
+                <i class="material-icons">cloud</i> sC1. Cloud Computing</a></span>\
+            </div></div>');
+        } else if (status === "tutor" && events === "default" && courses === "addedCourse") {
+            Materialize.toast('Successfully regist the course!', 5000);
+            eventsDom.append("<div class='collapsible-header'>No upcoming events!</div>");
+            coursesDom.append('<div class="card blue-grey darken-1">\
+            <div class="card-content white-text" >\
+                <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "student" && events === "default" && courses === "default") {
             eventsDom
@@ -26,17 +34,17 @@ $(function() {
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
                     <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                    <i class="material-icons">cloud</i>C1. Cloud Computing</a></span>\
+                    <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
                     <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                    <i class="material-icons">insert_chart</i>C4. Machine Learning</a></span>\
+                    <i class="material-icons">insert_chart</i> C4. Machine Learning</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
                     <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                    <i class="material-icons">trending_up</i>C5. An Intuitive Introduction to Probability</a></span>\
+                    <i class="material-icons">trending_up</i> C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
                     
         } else if (status === "student" && events === "meeting" && courses === "default") {
@@ -47,17 +55,17 @@ $(function() {
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
                     <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                    <i class="material-icons">cloud</i>C1. Cloud Computing</a></span>\
+                    <i class="material-icons"> cloud</i>C1. Cloud Computing</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
                     <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                    <i class="material-icons">insert_chart</i>C4. Machine Learning</a></span>\
+                    <i class="material-icons"> insert_chart</i>C4. Machine Learning</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
                     <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
-                    <i class="material-icons">trending_up</i>C5. An Intuitive Introduction to Probability</a></span>\
+                    <i class="material-icons"> trending_up</i>C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
                     
         }
