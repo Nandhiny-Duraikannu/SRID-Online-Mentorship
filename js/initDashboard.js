@@ -27,6 +27,13 @@ $(function() {
                 <span class="card-title" ><a href="course-dashboard.html" class="grey-text text-lighten-3" href="CC_Tutor.html">\
                 <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
             </div></div>');
+        } else if (status === "tutor" && events === "meeting" && courses === "addedCourse") {
+            eventsDom.append("<div class='collapsible-header'><a href='meeting-detail.html'>1:1 meeting with Andrew</a></div>");
+            coursesDom.append('<div class="card blue-grey darken-1">\
+            <div class="card-content white-text" >\
+                <span class="card-title" ><a href="course-dashboard.html" class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
+            </div></div>');
         } else if (status === "student" && events === "default" && courses === "default") {
             eventsDom
                 .append('<div class="collapsible-header">Cloud Computing Phase 3 Due Nov 10,3 pm</div>');
