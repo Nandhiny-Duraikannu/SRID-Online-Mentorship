@@ -162,7 +162,6 @@ $(function() {
             </tr>\
             </tbody>');
         }
-        // $('#meetingDateConfirmed').val(meetingDate);
     }
     init();
 });
