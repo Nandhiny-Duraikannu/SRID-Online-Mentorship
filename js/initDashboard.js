@@ -33,17 +33,17 @@ $(function() {
             coursesDom
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" href="course-dashboard.html">\
                     <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3">\
                     <i class="material-icons">insert_chart</i> C4. Machine Learning</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3">\
                     <i class="material-icons">trending_up</i> C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
                     
@@ -54,17 +54,17 @@ $(function() {
             coursesDom
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" href="course-dashboard.html">\
                     <i class="material-icons"> cloud</i>C1. Cloud Computing</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3"">\
                     <i class="material-icons"> insert_chart</i>C4. Machine Learning</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3"">\
                     <i class="material-icons"> trending_up</i>C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
                     
