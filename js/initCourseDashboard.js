@@ -23,4 +23,5 @@ $(function() {
 
 function viewVideo() {
     localStorage.setItem("video", "default");
+    window.location = "video.html";
 }
