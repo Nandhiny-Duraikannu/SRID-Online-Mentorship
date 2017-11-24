@@ -1,6 +1,22 @@
 $(function() {
     function init() {
         let quizInd = localStorage.getItem('quizInd');
+        let status = localStorage.getItem("status");
+        let breadcrumbDom = $('#quizContentBreadCrumb');
+
+        if(status === "tutor") {
+            breadcrumbDom
+                .append('<a class="breadcrumb">...</a>')
+                .append('<a href="student-list.html" class="breadcrumb">Students</a>')
+                .append('<a href="view-grades.html" class="breadcrumb">Andrew</a>')
+                .append('<a class="breadcrumb">Quiz Content</a>');
+        } else {
+            breadcrumbDom
+                .append('<a class="breadcrumb">...</a>')
+                .append('<a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>')
+                .append('<a href="view-grades.html" class="breadcrumb">View Grades</a>')
+                .append('<a class="breadcrumb">Quiz Content</a>');
+        }
         if (quizInd === "undefined") {
             quizInd = "";
         }
