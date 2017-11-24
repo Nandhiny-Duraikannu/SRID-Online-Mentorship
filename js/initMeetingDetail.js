@@ -3,7 +3,7 @@ $(function() {
         Materialize.toast('Successfully scheduled the meeting!', 5000);
 
         let meetingDate = localStorage.getItem('meetingDate');
-        let stutus = localStorage.getItem("status");
+        let status = localStorage.getItem("status");
         let breadcrumbDom = $('#meetingDetailBreadCrumb');
 
         if (meetingDate === "undefined") {
