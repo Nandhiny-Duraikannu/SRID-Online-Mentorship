@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>Online Mentorship</title>
@@ -8,99 +8,91 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
+  </head>
 
-<body>
-<nav>
-    <div class="nav-wrapper">
+  <body>
+    <nav>
+      <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Online Mentorship</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="">Profile</a></li>
-            <li><a href="">My Courses</a></li>
-            <li><a href="">Forum</a></li>
-            <li><a href="">Logout</a></li>
+          <li><a href="">Profile</a></li>
+          <li><a href="">My Courses</a></li>
+          <li><a href="">Forum</a></li>
+          <li><a href="">Logout</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="">Profile</a></li>
-            <li><a href="">My Courses</a></li>
-            <li><a href="">Forum</a></li>
-            <li><a href="">Logout</a></li>
+          <li><a href="">Profile</a></li>
+          <li><a href="">My Courses</a></li>
+          <li><a href="">Forum</a></li>
+          <li><a href="">Logout</a></li>
         </ul>
-    </div>
-</nav>
-<nav class="clean">
+      </div>
+  </nav>
+  <nav class="clean">
     <div class="nav-wrapper">
-        <div class="col s12">
-            <a href="#!" class="breadcrumb">Dashboard</a>
-            <a href="#!" class="breadcrumb">Cloud Computing</a>
-            <a href="#!" class="breadcrumb">View Grades</a>
-        </div>
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">Dashboard</a>
+        <a href="#!" class="breadcrumb">Cloud Computing</a>
+        <a href="#!" class="breadcrumb">View Grades</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<!--add chart here -->
+  <!--add chart here -->
 
-<div class="container">
-    <h2>Performance in Quiz</h2>
-    <canvas id="myChart" width="400" height="250"></canvas>
-</div>
+  <div class="container">
+      <h2>Performance in Quiz</h2>
+      <canvas id="myChart" width="400" height="250"></canvas>
+  </div>
 
-<main >
-
+  <main>
     <div id="test-swipe-1" class="col s12">
-        <table class="centered striped">
-            <thead>
-            <tr>
-                <th>Quiz Title</th>
-                <th>Score/100</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Quiz 1</td>
-                <td>60</td>
-                <td><a class="waves-effect waves-light btn" onclick="setQuizContent('1')">View Quiz Content</a></td>
-            </tr>
-            <tr>
-                <td>Quiz 2</td>
-                <td>40</td>
-                <td><a class="waves-effect waves-light btn" onclick="setQuizContent('2')">View Quiz Content</a></td>
-            </tr>
-            <tr>
-                <td>Quiz 3</td>
-                <td>88</td>
-                <td><a class="waves-effect waves-light btn" onclick="setQuizContent('3')">View Quiz Content</a></td>
-            </tr>
-            <tr>
-                <td>Quiz 4</td>
-                <td>95</td>
-                <td><a class="waves-effect waves-light btn" onclick="setQuizContent('4')">View Quiz Content</a></td>
-            </tr>
-            </tbody>
-        </table>
+      <table class="centered striped">
+        <thead>
+          <tr>
+            <th>Quiz Title</th>
+            <th>Score/100</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Quiz 1</td>
+            <td>60</td>
+            <td><a class="waves-effect waves-light btn" onclick="setQuizContent('1')">View Quiz Content</a></td>
+          </tr>
+          <tr>
+            <td>Quiz 2</td>
+            <td>40</td>
+            <td><a class="waves-effect waves-light btn" onclick="setQuizContent('2')">View Quiz Content</a></td>
+          </tr>
+          <tr>
+            <td>Quiz 3</td>
+            <td>88</td>
+            <td><a class="waves-effect waves-light btn" onclick="setQuizContent('3')">View Quiz Content</a></td>
+          </tr>
+          <tr>
+            <td>Quiz 4</td>
+            <td>95</td>
+            <td><a class="waves-effect waves-light btn" onclick="setQuizContent('4')">View Quiz Content</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-
-</main>
-<footer class="page-footer">
+  </main>
+  <footer class="page-footer">
     <div class="container linkType center">
-        <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> |
-        <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
-        <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
-        <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
+      <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
     </div>
-</footer>
+  </footer>
 
-
-<!--  Scripts-->
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-<script src="../js/materialize.js"></script>
-<script src="../js/init.js"></script>
-<script src="../js/setQuizContent.js"></script>
-
-
-</body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/setQuizContent.js"></script>
+  </body>
 </html>
