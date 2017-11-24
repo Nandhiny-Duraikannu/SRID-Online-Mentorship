@@ -121,19 +121,19 @@ $(function() {
             <tbody>\
             <tr>\
                 <td>Quiz 1</td>\
-                <td>60</td>\
-            </tr>\
-            <tr>\
-                <td>Quiz 2</td>\
-                <td>40</td>\
-            </tr>\
-            <tr>\
-                <td>Quiz 3</td>\
                 <td>88</td>\
             </tr>\
             <tr>\
-                <td>Quiz 4</td>\
+                <td>Quiz 2</td>\
                 <td>95</td>\
+            </tr>\
+            <tr>\
+                <td>Quiz 3</td>\
+                <td>70</td>\
+            </tr>\
+            <tr>\
+                <td>Quiz 4</td>\
+                <td>35</td>\
             </tr>\
             </tbody>")
         } else {
@@ -150,15 +150,15 @@ $(function() {
             <tbody>\
             <tr>\
                 <td>Quiz 1</td>\
-                <td>60</td>\
+                <td>88</td>\
             </tr>\
             <tr>\
                 <td>Quiz 2</td>\
-                <td>40</td>\
+                <td>95</td>\
             </tr>\
             <tr>\
                 <td>Quiz 3</td>\
-                <td>88</td>\
+                <td>70</td>\
             </tr>\
             </tbody>');
         }
