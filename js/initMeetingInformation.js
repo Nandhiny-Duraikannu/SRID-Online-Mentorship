@@ -8,7 +8,7 @@ $(function() {
             meetingDate = "no date picked!";
         }
         $('#meetingDateConfirmed').val(meetingDate);
-        Materialize.toast('Transcript added in XXX/XXX/XXX!', 5000);
+        Materialize.toast('Transcript added in dashboard/Cloud Computing/view Transcript!', 5000);
 
         if (status === "tutor") {
             breadcrumbDom

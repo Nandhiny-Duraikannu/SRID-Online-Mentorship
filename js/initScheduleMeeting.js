@@ -19,3 +19,13 @@ $(function() {
     }
     init();
 });
+
+function confirm() {
+    if (typeof(Storage) !== "undefined") {
+        let date = $('#meetingDate').val();
+        localStorage.setItem('meetingDate', date);
+        window.location = "meeting-detail.html";
+    } else {
+        alert("Sorry you don't support local storage!");
+    }
+}
