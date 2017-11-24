@@ -10,13 +10,17 @@ $(function() {
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12">view transcript</a></div>');
         } else {
             buttonDom
-            .append('<div class="row"><a class="waves-effect waves-light btn col s12">lecture videos</a></div>')
-            .append('<div class="row"><a class="waves-effect waves-light btn col s12">view grads</a></div>')
-            .append('<div class="row"><a class="waves-effect waves-light btn col s12">take quiz</a></div>')
-            .append('<div class="row"><a class="waves-effect waves-light btn col s12">forum</a></div>')
-            .append('<div class="row"><a class="waves-effect waves-light btn col s12">scedule 1:1 with Professor</a></div>')
-            .append('<div class="row"><a class="waves-effect waves-light btn col s12">view meeting transcripts</a></div>');
+                .append('<div class="row"><a class="waves-effect waves-light btn col s12" onclick="viewVideo()">lecture videos</a></div>')
+                .append('<div class="row"><a class="waves-effect waves-light btn col s12">view grads</a></div>')
+                .append('<div class="row"><a class="waves-effect waves-light btn col s12">take quiz</a></div>')
+                .append('<div class="row"><a class="waves-effect waves-light btn col s12">forum</a></div>')
+                .append('<div class="row"><a class="waves-effect waves-light btn col s12">scedule 1:1 with Professor</a></div>')
+                .append('<div class="row"><a class="waves-effect waves-light btn col s12">view meeting transcripts</a></div>');
         }
     }
     init();
 });
+
+function viewVideo() {
+    localStorage.setItem("video", "default");
+}
