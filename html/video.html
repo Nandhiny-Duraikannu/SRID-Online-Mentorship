@@ -6,8 +6,8 @@
   <title>Online Mentorship</title>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
@@ -32,15 +32,15 @@
   <nav class="clean">
     <div class="nav-wrapper">
       <div class="col s12">
-        <a href="#!" class="breadcrumb">Dashboard</a>
-        <a href="#!" class="breadcrumb">Cloud Computing</a>
-        <a href="#!" class="breadcrumb">View Lecture</a>
+        <a href="dashboard.html" class="breadcrumb">Dashboard</a>
+        <a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>
+        <a class="breadcrumb">View Lecture</a>
       </div>
     </div>
   </nav>
-  <h2 class="center">Cloud Computing - 1.2 GCP</h2>
+  <h2 class="center" id="courseTitle"></h2>
   <div class="video-container">
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe id="videoLink" width="853" height="480" frameborder="0" allowfullscreen></iframe>
   </div>
 
   <main>
@@ -49,7 +49,7 @@
       <li class="tab col s3"><a href="#test-swipe-2"><p>Reference Video</p></a></li>
     </ul>
     <div id="test-swipe-1" class="col s12">    
-      <table class="centered striped">
+      <!-- <table class="centered striped">
         <thead>
           <tr>
             <th>ID</th>
@@ -70,10 +70,10 @@
             <td>Azure</td>        
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </div>
     <div id="test-swipe-2" class="col s12">
-      <table class="centered striped">
+      <!-- <table class="centered striped">
         <thead>
           <tr>
             <th>Course</th>
@@ -98,7 +98,7 @@
             <td><a>23:29 - 29:52</a></td> 
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </div>
   </main>
   <footer class="page-footer">
@@ -113,7 +113,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/initVideo.js"></script>
 
   </body>
 </html>
