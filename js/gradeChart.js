@@ -114,26 +114,31 @@ $(function() {
             });
             $('#scoreList').html("<thead>\
             <tr>\
-                <th>Quiz Title</th>\
+                <th>Title</th>\
                 <th>Score/100</th>\
+                <th></th>\
             </tr>\
             </thead>\
             <tbody>\
             <tr>\
                 <td>Quiz 1</td>\
                 <td>88</td>\
+                <td><a class='waves-effect waves-light btn' onclick='setQuizContent(1)'>View Quiz Content</a></td>\
             </tr>\
             <tr>\
                 <td>Quiz 2</td>\
                 <td>95</td>\
+                <td><a class='waves-effect waves-light btn' onclick='setQuizContent(2)'>View Quiz Content</a></td>\
             </tr>\
             <tr>\
                 <td>Quiz 3</td>\
                 <td>70</td>\
+                <td><a class='waves-effect waves-light btn' onclick='setQuizContent(3)'>View Quiz Content</a></td>\
             </tr>\
             <tr>\
                 <td>Quiz 4</td>\
                 <td>35</td>\
+                <td><a class='waves-effect waves-light btn' onclick='setQuizContent(4)'>View Quiz Content</a></td>\
             </tr>\
             </tbody>")
         } else {
@@ -141,26 +146,30 @@ $(function() {
                 data: data0,
                 options: option
             });
-            $('#scoreList').html('<thead>\
+            $('#scoreList').html("<thead>\
             <tr>\
-                <th>Quiz Title</th>\
+                <th>Title</th>\
                 <th>Score/100</th>\
+                <th></th>\
             </tr>\
             </thead>\
             <tbody>\
             <tr>\
                 <td>Quiz 1</td>\
                 <td>88</td>\
+                <td><a class='waves-effect waves-light btn' onclick='setQuizContent(1)'>View Quiz Content</a></td>\
             </tr>\
             <tr>\
                 <td>Quiz 2</td>\
                 <td>95</td>\
+                <td><a class='waves-effect waves-light btn' onclick='setQuizContent(2)'>View Quiz Content</a></td>\
             </tr>\
             <tr>\
                 <td>Quiz 3</td>\
                 <td>70</td>\
+                <td><a class='waves-effect waves-light btn' onclick='setQuizContent(3)'>View Quiz Content</a></td>\
             </tr>\
-            </tbody>');
+            </tbody>");
         }
     }
     init();
