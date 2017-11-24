@@ -11,7 +11,7 @@ $(function() {
         } else {
             buttonDom
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12" onclick="viewVideo()">lecture videos</a></div>')
-                .append('<div class="row"><a class="waves-effect waves-light btn col s12">view grads</a></div>')
+                .append('<div class="row"><a href="view-grades.html" class="waves-effect waves-light btn col s12">view grads</a></div>')
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12">take quiz</a></div>')
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12">forum</a></div>')
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12">scedule 1:1 with Professor</a></div>')
