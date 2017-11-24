@@ -13,7 +13,7 @@ $(function() {
                 <span class="card-title" >No courses</span>\
                 </div></div>');
         } else if (status === "tutor" && events === "meeting" && courses === "default") {
-            eventsDom.append("<div class='collapsible-header'>1:1 meeting with Andrew</div>");
+            eventsDom.append("<div class='collapsible-header'><a href='meeting-detail.html'>1:1 meeting with Andrew</a></div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
             <div class="card-content white-text" >\
                 <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
@@ -49,7 +49,7 @@ $(function() {
                     
         } else if (status === "student" && events === "meeting" && courses === "default") {
             eventsDom
-                .append('<div class="collapsible-header">Meeting with Professor Emily Nov 10,12 pm</div>')
+                .append('<div class="collapsible-header"><a href="meeting-detail.html">1:1 meeting with Emily</a></div>')
                 .append('<div class="collapsible-header">Cloud Computing Phase 3 Due Nov 10,3 pm</div>');
             coursesDom
                 .append('<div class="card blue-grey darken-1">\
