@@ -6,6 +6,7 @@
     <title>Online Mentorship</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://s3-media1.fl.yelpcdn.com/assets/srv0/styleguide/03bc757bb79b/assets/css/styleguide-pkg.css" rel="stylesheet" >
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
@@ -88,13 +89,137 @@
             </div>
 
         </div>
+        <div class="section" id="button">
+            <div class="section" id="buttons">
+                <h1 class="section-title">Buttons</h1>
+                <div id="section-buttons">
+
+                    <input type="checkbox" name="toggle-code" id="show-code-buttons" class="styleguide-toggle-code_handler">
+
+                    <table class="table table-bordered table--stack table--fixed styleguide-item">
+                        <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div class="arrange arrange--stack">
+                                    <div class="arrange_unit arrange_unit--fill">
+                                        <h2>Basic buttons</h2>
+
+                                    </div>
+                                    <!--div class="arrange_unit">
+                                        <div class="u-nowrap u-text-unselectable reset-font-weight" aria-hidden="true">
+                                            <label for="show-code-buttons">
+                                                <a class="u-cursor-pointer"><span aria-hidden="true" style="width: 18px; height: 18px;" class="icon icon--18-embed icon--size-18 u-space-r-half">
+                                                    <svg class="icon_svg">
+                                                        <use xlink:href="#18x18_embed" />
+                                                    </svg>
+                                                    </span><span>Toggle Source Code</span></a>
+                                            </label>
+                                            |
+                                            <a href="#section-buttons">Link</a>
+
+                                        </div>
+
+                                    </div-->
+                                </div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <p>These are the basic buttons that can be rendered using the <code>$ybtn.ybutton</code> helper method.</p>
+                                <table class="table table-striped u-space-b0">
+                                    <thead class="responsive-hidden-medium">
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <th class="u-text-centered">Small</th>
+                                        <th class="u-text-centered">Medium (Default)</th>
+                                        <th class="u-text-centered">Big</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>Secondary Button<br>(Default)</th>
+                                        <td data-td-label="Small" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--small"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Medium" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Big" class="u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--big"><span>Button</span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>Primary Button</th>
+                                        <td data-td-label="Small" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--primary ybtn--small"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Medium" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--primary"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Big" class="u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--primary ybtn--big"><span>Button</span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>CTA Button</th>
+                                        <td data-td-label="Small" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--small ybtn--cta"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Medium" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--cta"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Big" class="u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--big ybtn--cta"><span>Button</span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>Green Button</th>
+                                        <td data-td-label="Small" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--small ybtn--green"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Medium" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--green"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Big" class="u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--big ybtn--green"><span>Button</span></button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>Blue Button</th>
+                                        <td data-td-label="Small" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--small ybtn--blue"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Medium" class="u-align-middle u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--blue"><span>Button</span></button>
+                                        </td>
+                                        <td data-td-label="Big" class="u-dead-center-alt">
+                                            <button type="submit" value="submit" class="ybtn ybtn--big ybtn--blue"><span>Button</span></button>
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+        </div>
     </div>
 </main>
     <ul id="nav-mobile" class="side-nav fixed">
 
         <li class="bold" style="padding-top: 20%"><a href="about.html" class="waves-effect waves-teal">About</a></li>
         <li class="no-padding">
-        <li class="bold"><a href="about.html" class="waves-effect waves-teal">Color</a></li>
+        <li class="bold"><a href="#color" class="waves-effect waves-teal">Color</a></li>
         <li class="bold"><a href="about.html" class="waves-effect waves-teal">Links</a></li>
         <li class="bold"><a href="about.html" class="waves-effect waves-teal">Buttons</a></li>
         <li class="bold"><a href="about.html" class="waves-effect waves-teal">Forms</a></li>
