@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     function init() {
         let status = localStorage.getItem("status");
         let buttonDom = $('#courseDashboardButton');
@@ -7,7 +7,7 @@ $(function() {
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12" onclick="setDisabledBtn()">lecture videos</a></div>')
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12" onclick="setDisabledBtn()">create quiz</a></div>')
                 .append('<div class="row"><a href="student-list.html" class="waves-effect waves-light btn col s12">student list</a></div>')
-                .append('<div class="row"><a href="view-transcript.html" class="waves-effect waves-light btn col s12">view transcript</a></div>');
+                .append('<div class="row"><a href="view-transcript.html" class="waves-effect waves-light btn col s12">view meeting transcript</a></div>');
         } else {
             buttonDom
                 .append('<div class="row"><a class="waves-effect waves-light btn col s12" onclick="viewVideo()">lecture videos</a></div>')

@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>Online Mentorship</title>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-<nav>
-  <div class="nav-wrapper">
-    <a href="#!" class="brand-logo">Online Mentorship</a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="">Profile</a></li>
-      <li><a href="">My Courses</a></li>
-      <li><a href="">Forum</a></li>
-      <li><a href="../index.html">Logout</a></li>
-    </ul>
-    <ul class="side-nav" id="mobile-demo">
-      <li><a href="">Profile</a></li>
-      <li><a href="">My Courses</a></li>
-      <li><a href="">Forum</a></li>
-      <li><a href="../index.html">Logout</a></li>
-    </ul>
-  </div>
-
-</nav>
-<nav class="clean">
-  <div class="nav-wrapper">
-    <div class="col s12">
-      <a href="#!" class="breadcrumb">Dashboard</a>
-      <a href="course-registration.html" class="breadcrumb">View All Courses</a>
-      <a class="breadcrumb">Course Detail</a>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Online Mentorship</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a onclick="setDisabledBtn()">Profile</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">My Courses</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">Forum</a>
+        </li>
+        <li>
+          <a href="../index.html">Logout</a>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">account_box</i>Profile</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">list</i>My Courses</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">forum</i>Forum</a>
+        </li>
+        <li>
+          <a href="../index.html">
+            <i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
+        </li>
+      </ul>
     </div>
-  </div>
-</nav>
 
-<main>
-  <div class="row">
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="video-container">
-          <iframe width="853" height="480" src="https://www.youtube.com/embed/uYGQcmZUTaw?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="col s12 l6">
-          <h2 class="title">Cloud Computing</h2>
-        </div>
-        <div class="card-content">
-          <p>This course gives students an overview of Cloud Computing,
-            which is the delivery of computing as a service over a network.
-            The course will introduce the cloud and cover the topics of data centers,
-            software defined networks and storage, cloud storage.
-            We will start by discussing the clouds motivating factors,
-            benefits, challenges, SLAs. We will describe several concepts
-            behind data center design and management, which enable the economic
-            and technological benefits of the cloud paradigm.</p>
+  </nav>
+  <nav class="clean">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a class="breadcrumb">...</a>
+        <a href="course-registration.html" class="breadcrumb">View All Courses</a>
+        <a class="breadcrumb">Course Detail</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="video-container">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/uYGQcmZUTaw?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col s12 l6">
+            <h2 class="title">Cloud Computing</h2>
+          </div>
+          <div class="card-content">
+            <p>This course gives students an overview of Cloud Computing, which is the delivery of computing as a service over
+              a network. The course will introduce the cloud and cover the topics of data centers, software defined networks
+              and storage, cloud storage. We will start by discussing the clouds motivating factors, benefits, challenges,
+              SLAs. We will describe several concepts behind data center design and management, which enable the economic
+              and technological benefits of the cloud paradigm.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<footer class="page-footer">
-  <div class="container linkType center">
-    <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> |
-    <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
-    <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
-    <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
-  </div>
-</footer>
+  <footer class="page-footer">
+    <div class="container linkType center">
+      <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
+    </div>
+  </footer>
 
 
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="../js/materialize.js"></script>
-<script src="../js/sideBar.js"></script>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/sideBar.js"></script>
+  <script src="../js/setDisabledBtn.js"></script>
 </body>
+
 </html>

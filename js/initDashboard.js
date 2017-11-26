@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     function init() {
         let status = localStorage.getItem("status");
         let events = localStorage.getItem("events");
@@ -53,7 +53,7 @@ $(function() {
                     <span class="card-title" ><a class="grey-text text-lighten-3" onclick="setDisabledBtn()">\
                     <i class="material-icons">trending_up</i> C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
-                    
+
         } else if (status === "student" && events === "meeting" && courses === "default") {
             eventsDom
                 .append('<div class="collapsible-header"><a href="meeting-detail.html">1:1 meeting with Emily</a></div>')
@@ -74,9 +74,9 @@ $(function() {
                     <span class="card-title" ><a class="grey-text text-lighten-3" onclick="setDisabledBtn()">\
                     <i class="material-icons"> trending_up</i>C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
-                    
+
         }
-    
+
     }
     init();
 });

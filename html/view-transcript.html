@@ -2,87 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Online Mentorship</title>
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Online Mentorship</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Online Mentorship</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="">Profile</a>
-                </li>
-                <li>
-                    <a href="">My Courses</a>
-                </li>
-                <li>
-                    <a href="">Forum</a>
-                </li>
-                <li>
-                    <a href="../index.html">Logout</a>
-                </li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li>
-                    <a href="">Profile</a>
-                </li>
-                <li>
-                    <a href="">My Courses</a>
-                </li>
-                <li>
-                    <a href="">Forum</a>
-                </li>
-                <li>
-                    <a href="../index.html">Logout</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="clean">
-        <div class="nav-wrapper">
-            <div class="col s12">
-                <a class="breadcrumb">...</a>
-                <a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>
-                <a class="breadcrumb">View Transcripts</a>
-            </div>
-        </div>
-    </nav>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Online Mentorship</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a onclick="setDisabledBtn()">Profile</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">My Courses</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">Forum</a>
+        </li>
+        <li>
+          <a href="../index.html">Logout</a>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">account_box</i>Profile</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">list</i>My Courses</a>
+        </li>
+        <li>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">forum</i>Forum</a>
+        </li>
+        <li>
+          <a href="../index.html">
+            <i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="clean">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>
+        <a class="breadcrumb">View Transcripts</a>
+      </div>
+    </div>
+  </nav>
 
 
 
-    <main>
-        <div class="container" id="transcriptContent">            
-        </div>
+  <main>
+    <div class="container" id="transcriptContent">
+    </div>
 
 
-    </main>
-    <footer class="page-footer">
-        <div class="container linkType center">
-            <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> |
-            <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
-            <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
-            <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
-        </div>
-    </footer>
+  </main>
+  <footer class="page-footer">
+    <div class="container linkType center">
+      <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
+    </div>
+  </footer>
 
 
-    <!--  Scripts-->
+  <!--  Scripts-->
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script src="../js/materialize.js"></script>
-    <script src="../js/initViewTranscript.js"></script>
-    <script src="../js/sideBar.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/initViewTranscript.js"></script>
+  <script src="../js/sideBar.js"></script>
+  <script src="../js/setDisabledBtn.js"></script>
 
 </body>
 
