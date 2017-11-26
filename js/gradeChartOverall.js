@@ -21,7 +21,7 @@ let data0 = {
             pointHoverBorderWidth: 2,
             pointRadius: 5,
             pointHitRadius: 10,
-            data: [80,90,88,95] ,
+            data: [80, 90, 88, 95],
         }
     ]
 };
@@ -47,7 +47,7 @@ let data1 = {
             pointHoverBorderWidth: 2,
             pointRadius: 5,
             pointHitRadius: 10,
-            data: [80,90,88,95] ,
+            data: [80, 90, 88, 95],
         },
         {
             label: "Andrew's score",
@@ -68,7 +68,7 @@ let data1 = {
             pointHoverBorderWidth: 2,
             pointRadius: 5,
             pointHitRadius: 10,
-            data: [88,95,70,35],
+            data: [88, 95, 70, 35],
         }
     ]
 };
@@ -77,25 +77,25 @@ let option = {
     showLines: true
 };
 
-function adddata(){
+function adddata() {
     myLineChart.data.datasets[0].data[7] = 50;
     myLineChart.data.labels[7] = "test add";
     myLineChart.update();
 }
 
-$(function() {
+$(function () {
     function init() {
         let status = localStorage.getItem('status');
         if (status === "student") {
-            let myLineChart = Chart.Line(canvas,{
+            let myLineChart = Chart.Line(canvas, {
                 data: data1,
                 options: option
-            });            
+            });
         } else {
-            let myLineChart = Chart.Line(canvas,{
+            let myLineChart = Chart.Line(canvas, {
                 data: data0,
                 options: option
-            });            
+            });
         }
     }
     init();

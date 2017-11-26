@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Online Mentorship</title>
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  </head>
 
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Online Mentorship</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="">Profile</a></li>
-          <li><a href="">My Courses</a></li>
-          <li><a href="">Forum</a></li>
-          <li><a href="../index.html">Logout</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="">Profile</a></li>
-          <li><a href="">My Courses</a></li>
-          <li><a href="">Forum</a></li>
-          <li><a href="../index.html">Logout</a></li>
-        </ul>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Online Mentorship</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Online Mentorship</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="">Profile</a>
+        </li>
+        <li>
+          <a href="">My Courses</a>
+        </li>
+        <li>
+          <a href="">Forum</a>
+        </li>
+        <li>
+          <a href="../index.html">Logout</a>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a href="">Profile</a>
+        </li>
+        <li>
+          <a href="">My Courses</a>
+        </li>
+        <li>
+          <a href="">Forum</a>
+        </li>
+        <li>
+          <a href="../index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="clean">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a class="breadcrumb">...</a>
+        <a href="view-grades.html" class="breadcrumb">Andrew</a>
+        <a class="breadcrumb">Add Grade</a>
       </div>
-    </nav>
-    <nav class="clean">
-      <div class="nav-wrapper">
-        <div class="col s12">
-          <a class="breadcrumb">...</a>
-          <a href="student-list.html" class="breadcrumb">Students</a>
-          <a href="view-grades.html" class="breadcrumb">Andrew</a>
-          <a class="breadcrumb">Add Grade</a>
-        </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
 
-    <main>
-      <div class="container">
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <input type="text" class="validate" value="Quiz 4" disabled>
-                <label for="meeting_title">Title</label>
-              </div>
-              </div>
-              <div class="row">
-                <div class="col s12">
-                  <label for="date" class="">Date</label>
-                  <input type="text" class="datepicker" id="meetingDate"/>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                    <input type="text" class="validate" value="35" disabled>
-                    <label for="meeting_title">Score</label>
-                </div>
-              </div>
-              <div class="row center">
-                <a class="waves-effect waves-light btn col s12" onclick="setScore()">Add Score</a>
-              </div>
-            </form>
-        </div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" class="validate" value="Quiz 4" disabled>
+              <label for="meeting_title">Title</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <label for="date" class="">Date</label>
+              <input type="text" class="datepicker" id="meetingDate" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" class="validate" value="35" disabled>
+              <label for="meeting_title">Score</label>
+            </div>
+          </div>
+          <div class="row center">
+            <a class="waves-effect waves-light btn col s12" onclick="setScore()">Add Score</a>
+          </div>
+        </form>
       </div>
-    </main>
-    <footer class="page-footer">
-      <div class="container linkType center">
-        <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> |
-        <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
-        <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
-        <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
-      </div>
-    </footer>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container linkType center">
+      <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
+      <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
+    </div>
+  </footer>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script src="../js/materialize.js"></script>
-    <script src="../js/datepicker.js"></script>
-    <script src="../js/initAddGrades.js"></script>
-    <script src="../js/sideBar.js"></script>
-  </body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/datepicker.js"></script>
+  <script src="../js/initAddGrades.js"></script>
+  <script src="../js/sideBar.js"></script>
+</body>
+
 </html>
