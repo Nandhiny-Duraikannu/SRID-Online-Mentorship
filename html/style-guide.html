@@ -15,7 +15,7 @@
 <body>
 <nav>
     <div class="nav-wrapper">
-        <div style="text-align: center"><a href="#!" class="brand-logo">Online Mentorship</a></div>
+        <div style="text-align: center"><div class="brand-logo">Online Mentorship</div></div>
     </div>
 
 </nav>
@@ -26,7 +26,8 @@
 
         <div class="section" id="about">
             <h1 class="section-title">About</h1>
-            <div class="container white" style="padding: 2%">
+
+            <div class="white" style="padding: 2%">
                 The styleguide is a resource for designers, product managers, and developers, providing a common language around UI patterns.
                 We use it to maintain modular front-end code and visual consistency across the web app
 
@@ -39,7 +40,7 @@
             <h1 class="section-title">Color</h1>
             <div id="section-color" style="padding-top: 2%">
 
-                <div class="white">
+                <div class="white" style="padding: 3%">
                     <h2 class="u-space-b4">Primary colors</h2>
                     <div class="styleguide-item">
                         <div class="swatches arrange arrange--wrap arrange--3-units arrange--24 arrange--stack">
@@ -105,7 +106,7 @@
 
         <div class="section" id="buttons">
             <h1 class="section-title">Buttons</h1>
-            <div id="section-buttons">
+            <div class="white" style="padding: 3%">
 
                 <input type="checkbox" name="toggle-code" id="show-code-buttons" class="styleguide-toggle-code_handler">
 
@@ -158,7 +159,7 @@
 
         <div class="section" id="forms">
             <h1 class="section-title">Forms</h1>
-            <div id="section-inputs">
+            <div class="white" style="padding: 3%">
 
                 <input type="checkbox" name="toggle-code" id="show-code-inputs" class="styleguide-toggle-code_handler">
 
@@ -200,7 +201,7 @@
 
         <div class="section" id="icons">
             <h1 class="section-title">Icons</h1>
-            <div id="section-user_passports">
+            <div class="white" style="padding: 3%">
 
                 <input type="checkbox" name="toggle-code" id="show-code-user_passports"
                        class="styleguide-toggle-code_handler">
@@ -229,18 +230,18 @@
 
         <div class="section" id="chart">
             <h1 class="section-title">Chart </h1>
-            <div class="container white">
+            <div class="white" style="padding: 3%">
                 <p> Line charts are used for plotting and comparing student's scores</p>
                 <canvas id="myChart" width="400" height="250"></canvas>
             </div>
         </div>
 
 
-        <div class="section" id="Meeting">
-            <h1 class="section-title">Meeting Status</h1>
-            <div class="container white" style="padding: 2%">
+        <div class="section" id="alerts">
+            <h1 class="section-title">Alerts</h1>
+            <div class="white" style="padding: 3%">
                 <p>'Toast' is used for styles related to notifications of meeting scheduled/completed or Transcript availability</p>
-                <div  style="padding: 5%"><a class="btn" onclick="Materialize.toast('Style for Meeting Status', 4000)">Click here!</a> </div>
+                <div  style="padding: 2%"><a class="btn" onclick="Materialize.toast('Style for Alerts', 4000)">Click here!</a> </div>
             </div>
         </div>
 
@@ -248,7 +249,7 @@
 
         <div class="section" id="breadcrumb">
             <h1 class="section-title">BreadCrumbs</h1>
-            <div class="container white" style="padding: 2%">
+            <div class="white" style="padding: 3%">
                 <p>Breadcrumbs are a good way to display your current location. This is usually used when you have multiple layers of content.</p>
                 <nav class="clean">
                     <div class="nav-wrapper">
@@ -263,7 +264,7 @@
         </div>
         <div class="section" id="tabs">
             <h1 class="section-title">Tabs</h1>
-            <div class="container white" style="padding: 2%">
+            <div class="white" style="padding: 3%">
                 <p>The tabs structure consists of an unordered list of tabs that have hashes corresponding to tab ids.
                     Then when you click on each tab, only the container with the corresponding tab id will become visible.
                 </p>
@@ -277,8 +278,8 @@
         </div>
 
         <div class="section" id="cards">
-            <h1 class="section-title">Tabs</h1>
-            <div class="container white" style="padding: 2%">
+            <h1 class="section-title">Cards</h1>
+            <div class="white" style="padding: 3%">
                 <p>Cards are used for displaying Courses.
                     Cards are a convenient means of displaying content composed of different types of objects.
                     They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably,
@@ -291,10 +292,10 @@
                             <div class="card-content white-text">
                                 <span class="card-title">Course Name</span>
                             </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                                <a href="#">This is a link</a>
-                            </div>
+                                <a class="col s6 btn" onclick="register()">Register</a>
+                                <a class="col s6 btn" onclick="register()">View</a>
+
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -316,7 +317,7 @@
     <li class="bold"><a href="#forms" class="waves-effect waves-teal">Forms</a></li>
     <li class="bold"><a href="#tabs" class="waves-effect waves-teal">Tabs</a></li>
     <li class="bold"><a href="#cards" class="waves-effect waves-teal">Cards</a></li>
-    <li class="bold"><a href="#meeting" class="waves-effect waves-teal">Meeting Status</a></li>
+    <li class="bold"><a href="#alerts" class="waves-effect waves-teal">Alerts</a></li>
     <li class="bold"><a href="#chart" class="waves-effect waves-teal">Charts</a></li>
     <li class="bold"><a href="#icons" class="waves-effect waves-teal">Icons</a></li>
 </ul>
