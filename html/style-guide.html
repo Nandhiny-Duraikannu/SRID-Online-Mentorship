@@ -27,7 +27,7 @@
             <h1 class="section-title">Color</h1>
             <div id="section-color" style="padding-top: 2%">
 
-
+                <div class="white">
                 <h2 class="u-space-b4">Primary colors</h2>
                 <div class="styleguide-item">
                     <div class="swatches arrange arrange--wrap arrange--3-units arrange--24 arrange--stack">
@@ -86,7 +86,7 @@
                     </div>
 
                 </div>
-
+                </div>
             </div>
 
         </div>
@@ -97,7 +97,7 @@
 
                 <input type="checkbox" name="toggle-code" id="show-code-buttons" class="styleguide-toggle-code_handler">
 
-                <table class="table table-bordered table--stack table--fixed styleguide-item">
+                <table class="table table-bordered table--stack table--fixed styleguide-item white">
                     <thead>
 
                     </thead>
@@ -197,41 +197,36 @@
 
                     <li class="island-item styleguide-example clearfix">
                         <h3>Cloud Computing Course</h3>
-                        <!--p>Includes avatar, profile link, city, stats and extra info (eg. elite badge)</p-->
-                        <!--div class="ypassport media-block">
-                            <!--div class="media-avatar responsive-photo-box">
-                                <!--div class="photo-box pb-60s">
-                                    <!--img class="photo-box-img" height="60"
-                                         src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/514f6997a318/assets/img/default_avatars/user_60_square.png"
-                                         width="60"-->
                                     <i class="material-icons">cloud</i>
 
-                                <!--/div-->
-
-
-                            <!--</div>-->
-                        <!--</div>-->
                     </li>
                     <li class="island-item styleguide-example clearfix">
-                        <h3>Full Passport</h3>
-                        <p>Includes avatar, profile link, city, stats and extra info (eg. elite badge)</p>
-                        <div class="ypassport media-block">
-                            <div class="media-avatar responsive-photo-box">
-                                <div class="photo-box pb-60s">
-                                    <img class="photo-box-img" height="60"
-                                         src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/514f6997a318/assets/img/default_avatars/user_60_square.png"
-                                         width="60">
+                        <h3>Combination Course</h3>
+                        <i class="material-icons">perm_data_setting</i>
+                    </li>
+                    <li class="island-item styleguide-example clearfix">
+                        <h3>Probability and Data</h3>
+                          <i class="material-icons">av_timer</i>
 
 
-                                </div>
-
-
-                            </div>
-                        </div>
                     </li>
                 </ul>
             </div>
         </div>
+
+
+        <div class="section" id="chart">
+            <h1 class="section-title">Chart - Line charts are used for plotting student's scores</h1>
+
+            <div class="container white">
+                <canvas id="myChart" width="400" height="250"></canvas>
+            </div>
+        </div>
+
+
+
+
+
     </div>
 
 </main>
@@ -244,15 +239,17 @@
     <li class="bold"><a href="#buttons" class="waves-effect waves-teal">Buttons</a></li>
     <li class="bold"><a href="#forms" class="waves-effect waves-teal">Forms</a></li>
     <li class="bold"><a href="about.html" class="waves-effect waves-teal">Navigation/Pagination</a></li>
-    <li class="bold"><a href="about.html" class="waves-effect waves-teal">Charts</a></li>
+    <li class="bold"><a href="#chart" class="waves-effect waves-teal">Charts</a></li>
     <li class="bold"><a href="about.html" class="waves-effect waves-teal">Tabs</a></li>
-    <li class="bold"><a href="about.html" class="waves-effect waves-teal">Icons</a></li>
+    <li class="bold"><a href="#icons" class="waves-effect waves-teal">Icons</a></li>
 </ul>
 
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 <script src="../js/materialize.js"></script>
+<script src="../js/gradeChart.js"></script>
 
 </body>
 </html>
