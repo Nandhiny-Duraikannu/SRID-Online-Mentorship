@@ -20,13 +20,13 @@
       </a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="">Profile</a>
+          <a onclick="setDisabledBtn()">Profile</a>
         </li>
         <li>
-          <a href="">My Courses</a>
+          <a onclick="setDisabledBtn()">My Courses</a>
         </li>
         <li>
-          <a href="">Forum</a>
+          <a onclick="setDisabledBtn()">Forum</a>
         </li>
         <li>
           <a href="../index.html">Logout</a>
@@ -34,16 +34,20 @@
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li>
-          <a href=""><i class="material-icons" id="sidebarIcon">account_box</i>Profile</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">account_box</i>Profile</a>
         </li>
         <li>
-          <a href=""><i class="material-icons" id="sidebarIcon">list</i>My Courses</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">list</i>My Courses</a>
         </li>
         <li>
-          <a href=""><i class="material-icons" id="sidebarIcon">forum</i>Forum</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">forum</i>Forum</a>
         </li>
         <li>
-          <a href="../index.html"><i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
+          <a href="../index.html">
+            <i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
         </li>
       </ul>
     </div>
@@ -94,6 +98,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/sideBar.js"></script>
+  <script src="../js/setDisabledBtn.js"></script>
 </body>
 
 </html>

@@ -20,13 +20,13 @@
       </a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="">Profile</a>
+          <a onclick="setDisabledBtn()">Profile</a>
         </li>
         <li>
-          <a href="">My Courses</a>
+          <a onclick="setDisabledBtn()">My Courses</a>
         </li>
         <li>
-          <a href="">Forum</a>
+          <a onclick="setDisabledBtn()">Forum</a>
         </li>
         <li>
           <a href="../index.html">Logout</a>
@@ -34,16 +34,20 @@
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li>
-          <a href=""><i class="material-icons" id="sidebarIcon">account_box</i>Profile</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">account_box</i>Profile</a>
         </li>
         <li>
-          <a href=""><i class="material-icons" id="sidebarIcon">list</i>My Courses</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">list</i>My Courses</a>
         </li>
         <li>
-          <a href=""><i class="material-icons" id="sidebarIcon">forum</i>Forum</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">forum</i>Forum</a>
         </li>
         <li>
-          <a href="../index.html"><i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
+          <a href="../index.html">
+            <i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
         </li>
       </ul>
     </div>
@@ -86,45 +90,32 @@
                 <span class="card-title">
                   <a class="grey-text text-lighten-3">
                     <i class="material-icons">perm_data_setting</i>
-                    C2. Conbination
+                    C2. Combination
                   </a>
                 </span>
               </div>
-              <a class="col s6 btn">View</a>
-              <a class="col s6 btn">Register</a>
+              <a class="col s6 btn" onclick="setDisabledBtn()">View</a>
+              <a class="col s6 btn" onclick="setDisabledBtn()">Register</a>
             </div>
-            <div class="row">
-                <div class="card blue-grey darken-1">
-                  <div class="card-content white-text">
-                    <span class="card-title" >
-                      <a class="grey-text text-lighten-3">
-                        <i class="material-icons">perm_data_setting</i>
-                        C2. Combination
-                      </a>
-                    </span>    
-                  </div>
-                  <a class="col s6 btn" onclick="setDisabledBtn()">View</a>
-                  <a class="col s6 btn" onclick="setDisabledBtn()">Register</a>
-                </div>
+          </div>
+          <div class="row">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">
+                  <a class="grey-text text-lighten-3">
+                    <i class="material-icons">av_timer</i>
+                    C3. Probability and Data
+                  </a>
+                </span>
               </div>
-              <div class="row">
-                  <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title" >
-                        <a class="grey-text text-lighten-3">
-                          <i class="material-icons">av_timer</i>
-                          C3. Probability and Data
-                        </a>
-                      </span>    
-                    </div>
-                    <a class="col s6 btn" onclick="setDisabledBtn()">View</a>
-                    <a class="col s6 btn" onclick="setDisabledBtn()">Register</a>
-                  </div>
-                </div>
-          </form>
-     </div>
-  </div>
-</main>
+              <a class="col s6 btn" onclick="setDisabledBtn()">View</a>
+              <a class="col s6 btn" onclick="setDisabledBtn()">Register</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
 
   <footer class="page-footer">
     <div class="container linkType center">
@@ -135,12 +126,12 @@
   </footer>
 
 
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="../js/materialize.js"></script>
-<script src="../js/initCourseRegistration.js"></script>
-<script src="../js/sideBar.js"></script>
-<script src="../js/setDisabledBtn.js"></script>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/initCourseRegistration.js"></script>
+  <script src="../js/sideBar.js"></script>
+  <script src="../js/setDisabledBtn.js"></script>
 
 </body>
 
