@@ -11,6 +11,21 @@ main {
 	flex: 1 0 auto;
 }
 
+.side-nav {
+	width: 240px;
+}
+
+.side-nav li > a {
+	height: 64px;
+    line-height: 64px;
+}
+
+#sidebarIcon {
+    line-height: 64px;
+    margin: 0 16px 0 0;
+    color: #546e78;
+}
+
 .icon-block {
 	padding: 0 15px;
 }
