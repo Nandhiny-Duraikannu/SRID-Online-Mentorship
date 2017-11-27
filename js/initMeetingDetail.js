@@ -28,7 +28,7 @@ $(function () {
 
 function joinMeeting() {
     localStorage.setItem("events", "default");
-    let $toastContent = $('<span>meeting...</span>')
+    let $toastContent = $('<span>Meeting...</span>')
         .add($('<div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>'))
         .add($('<button class="btn-flat toast-action" onclick="redirectToInformation()">Done</button>'));
     Materialize.toast($toastContent);
