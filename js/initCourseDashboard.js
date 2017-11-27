@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     function init() {
         let status = localStorage.getItem("status");
         let buttonDom = $('#courseDashboardButton');

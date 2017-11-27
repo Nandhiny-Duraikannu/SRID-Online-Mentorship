@@ -1,9 +1,9 @@
 function setQuizContent(ind) {
-    redirect(ind);    
+    redirect(ind);
 }
 
 function redirect(ind) {
-    if (typeof(Storage) !== "undefined") {
+    if (typeof (Storage) !== "undefined") {
         localStorage.setItem('quizInd', ind);
         window.location = "../html/view-quiz-content.html";
     } else {

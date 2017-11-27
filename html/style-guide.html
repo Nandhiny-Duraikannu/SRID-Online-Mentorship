@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Online Mentorship</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://s3-media1.fl.yelpcdn.com/assets/srv0/styleguide/03bc757bb79b/assets/css/styleguide-pkg.css"
+          rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <div style="text-align: center"><a style="position: absolute;color: #fff;display: inline-block;font-size: 1.7em;padding-left: 1.5%;"> Online Mentorship</a></div>
+    </div>
+
+</nav>
+
+<main style="padding-left: 10%">
+    <div class="container">
+        <h1 style="text-align: center; padding-top: 5%;padding-left: 8%;padding-bottom: 5%">Style Guide</h1>
+
+        <div class="section" id="about">
+            <h1 class="section-title">About</h1>
+
+            <div class="white" style="padding: 2%; ">
+                <p>The styleguide is a resource for designers, product managers, and developers, providing a common language around UI patterns.</p>
+                <p>To develop this system we have used Materialize.</p>
+                <p>Materialize is a design language that combines the classic principles of successful design along with innovation and technology.</p>
+                <p>Our goal is to develop a system of design that allows for a unified user experience across all their products on any platform.</p>
+                <p>We use it to maintain modular front-end code and visual consistency across the web app.</p>
+
+            </div>
+        </div>
+
+
+
+        <div class="section" id="color">
+            <h1 class="section-title">Color</h1>
+            <div id="section-color" style="padding-top: 2%">
+
+                <div class="white" style="padding: 3%">
+                    <p>
+                        Here is a color palette based on the material design base colors.
+                        Each of these colors is defined with a base color class and an optional lighten or darken class.
+                    </p>
+                    <h2 class="u-space-b4">Primary colors</h2>
+                    <div class="styleguide-item">
+                        <div class="swatches arrange arrange--wrap arrange--3-units arrange--24 arrange--stack">
+                            <div class="arrange_unit">
+                                <p class="palette-swatch" style="background-color: Black; font-family:Lucida Grande"></p>
+                                Black
+                                <strong class="u-block">#d32323</strong>
+                            </div>
+                            <div class="arrange_unit">
+                                <p class="palette-swatch" style="background-color: #FFFFFF;border: 1px solid #cccccc"></p>
+                                White
+                                <strong class="u-block">#FFFFFF</strong>
+                            </div>
+                            <div class="arrange_unit">
+                                <p class="palette-swatch" style="background-color: #88AAA9;"></p>
+                                Gulf Stream
+                                <strong class="u-block">#88AAA9</strong>
+                            </div>
+                            <div class="arrange_unit">
+                                <p class="palette-swatch" style="background-color: #546e7a;"></p>
+                                Blue Grey
+                                <strong class="u-block">#546e7a</strong>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h2 class="u-space-b4">Backgrounds and borders</h2>
+                    <div class="styleguide-item">
+                        <div class="arrange arrange--wrap arrange--3-units arrange--24 arrange--stack">
+                            <div class="arrange_unit">
+                                <p class="palette-swatch" style="background-color:#6C567B;"></p>
+                                $Header-color
+                                <strong class="u-block">#6C567B</strong>
+                            </div>
+                            <div class="arrange_unit">
+                                <p class="palette-swatch" style="background-color:#F6F4F1;"></p>
+                                $Background-color
+                                <strong class="u-block">#F6F4F1</strong>
+                            </div>
+                            <div class="arrange_unit">
+                                <p class="palette-swatch" style="background-color: #E1DEDC;"></p>
+                                $Footer-background-color
+                                <strong class="u-block">#E1DEDC</strong>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="styleguide-item">
+                        <h2 class="u-space-b4">Text</h2>
+                        <div class="arrange arrange--wrap arrange--3-units arrange--24 arrange--stack">
+                            <div class="arrange_unit">
+                                <h2 style="color: Black;">
+                                    <b>Title-text</b> Black
+                                </h2>
+                                <p style="color: black;">
+                                    <b>Normal-text</b> Black
+                                </p>
+                                <h2 style="color: Black;">
+                                    <b>Text inside Buttons</b> White
+                                </h2>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section" id="buttons">
+            <h1 class="section-title">Buttons</h1>
+            <div class="white" style="padding: 3%">
+                <p>
+                    <h2>Basics</h2>
+                    Buttons are used as triggers for actions.<br>
+                    Depending on the use case, buttons contain a label and/or an icon. <br>
+                    There are a variety of styles, sizes, and variations that can be used for different situations.<br>
+                    All button labels are sentence case.<br>
+                    They should be as short as possible while clearly explaining what will happen when the button is clicked.<br>
+                </p>
+                <p>
+                <h2>Size</h2>
+                Large, use the btn-large class.<br>
+                Normal, use the btn col s12
+                </p>
+                <p>
+                <h2>Styles</h2>
+                There are two button styles described below:<br>
+                </p>
+                <input type="checkbox" name="toggle-code" id="show-code-buttons" class="styleguide-toggle-code_handler">
+
+                <table class="table table-bordered table--stack table--fixed styleguide-item white">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+
+                            <table class="table table-striped">
+                                <thead class="responsive-hidden-medium">
+
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>Primary Button(Default)<br> Used as col S12<br>Background color -  Gulf Stream(#88AAA9)<br>
+                                        Font color - White (#FFFFFF)</th>
+                                    <td data-td-label="Small" class="u-align-middle u-dead-center-alt">
+                                        <button type="submit" value="submit"
+                                                class="waves-effect waves-light btn col s12"><span>Button</span>
+                                        </button>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <th>Secondary Button<br>
+                                        Cards with links are used<br>
+                                        Background-color: Blue Grey (#546e7a)<br>
+                                        Font color - White (#FFFFFF)<br>
+                                        For more info on Cards, <a href="#cards">read here</a>
+
+                                    </th>
+                                    <td data-td-label="Small" class="u-align-middle u-dead-center-alt">
+                                        <div class="card blue-grey darken-1">
+                                            <div class="card-content white-text">
+                                                <span class="card-title">
+                                                Cards with Link</span>
+                                            </div>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+        <div class="section" id="forms">
+            <h1 class="section-title">Forms</h1>
+            <div class="white" style="padding: 3%">
+                <p>
+                    <h2>Basics</h2>
+                Properly mark fields as required<br>
+                Add placeholders when necessary, especially when users may not fully understand the purpose of the input <br>
+                If necessary, place short, related inputs on the same line <br>
+                Ensure that unsaved changes are not easily lost <br>
+            </p>
+            <p>
+                <h2>Field Width</h2>
+                Field widths should communicate the expected or max length of content.<br>
+                Use consistent, non-arbitrary widths to help with alignment.<br>
+                These widths apply to similar controls like selects, date inputs, and sliders. <br>
+                These widths may not be appropriate in some situations or layouts.<br>
+                </p>
+                <p>
+                    We recommend using 'input-field col s12'
+                </p>
+                <input type="checkbox" name="toggle-code" id="show-code-inputs" class="styleguide-toggle-code_handler">
+
+                <ul class="island-stack island island--light styleguide-item">
+                    <li class="island-item">
+                        <div class="arrange arrange--stack">
+                            <div class="arrange_unit arrange_unit--fill">
+                                <h2>Text inputs and Textareas</h2>
+
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="island-item styleguide-example clearfix">
+                        <form class="yform">
+                            <label for="form-text">Meeting Title</label>
+                            <input id="form-text" name="form-text" type="text" placeholder="Regarding Quiz4">
+                            <label>Meeting Date</label>
+                            <input name="text" type="date" class="datepicker">
+                            <label>Description</label>
+                            <textarea id="textarea1" placeholder="Add meeting details"
+                                      class="materialize-textarea"></textarea>
+
+
+                        </form>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="section" id="icons">
+            <h1 class="section-title">Icons</h1>
+            <div class="white" style="padding: 3%">
+                <p>
+                    <h2>Basics</h2>
+                    System icons should always be one solid color<br>
+                    System icons should either be black, white, or any other primary UI color<br>
+                    System icons can be placed in colored circles<br>
+                <h2>Sizes</h2>
+                Icons can vary in size<br>
+                When scaling icons, ensure the sizes used appear sharp on standard and high DPI screens <br>
+                </p>
+                <input type="checkbox" name="toggle-code" id="show-code-user_passports"
+                       class="styleguide-toggle-code_handler">
+
+                <ul class="island-stack island island--light styleguide-item">
+
+                    <li class="island-item styleguide-example clearfix">
+                        <h3>Cloud Computing Course</h3>
+                        <i class="material-icons">cloud</i>
+
+                    </li>
+                    <li class="island-item styleguide-example clearfix">
+                        <h3>Combination Course</h3>
+                        <i class="material-icons">perm_data_setting</i>
+                    </li>
+                    <li class="island-item styleguide-example clearfix">
+                        <h3>Probability and Data</h3>
+                        <i class="material-icons">av_timer</i>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="section" id="chart">
+            <h1 class="section-title">Chart </h1>
+            <div class="white" style="padding: 3%">
+                <p>
+                    Good data visualizations help users find insights in their data. <br>
+                    They can use those insights to tell stories that inform and persuade. <br>
+                     We recommend using Chart.js to create your data visualizations.<br>
+                     Chart.js includes Line Charts that integrate seamlessly with the applications's look and feel.<br>
+                     This is used for plotting and comparing student's scores
+                </p>
+
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+
+        <div class="section" id="alerts">
+            <h1 class="section-title">Alerts</h1>
+            <div class="white" style="padding: 3%">
+                <p>'Toast' is used for styles related to alerts. <br>
+                    Materialize provides an easy way for you to send unobtrusive alerts to your users through toasts.<br>
+                    These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes.<br>
+                    Mostly for meeting scheduled/completed or Transcript availability</p>
+                <div  style="padding: 2%"><a class="btn" onclick="Materialize.toast('Style for Alerts', 4000)">Click here!</a> </div>
+            </div>
+        </div>
+
+
+
+        <div class="section" id="breadcrumb">
+            <h1 class="section-title">BreadCrumbs</h1>
+            <div class="white" style="padding: 3%">
+                <p>Breadcrumbs are a good way to display your current location. <br>
+                    This is usually used when you have multiple layers of content.<br>
+                    Should be placed at the top of the page below the header.</p>
+                <nav class="clean">
+                    <div class="nav-wrapper">
+                        <div class="col s12">
+                            <a href="#" class="breadcrumb">First</a>
+                            <a href="#" class="breadcrumb">Second</a>
+                            <a href="#" class="breadcrumb">Third</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="section" id="tabs">
+            <h1 class="section-title">Tabs</h1>
+            <div class="white" style="padding: 3%">
+                <p>Purpose is to able User’s need to flip between multiple focused panes/views of content.<br>
+                <p>The tabs structure consists of an unordered list of tabs that have hashes corresponding to tab ids.
+                    Then when you click on each tab, only the container with the corresponding tab id will become visible.
+                </p>
+                <ul id="tabs-swipe-demo" class="tabs" style="padding: 2%">
+                    <li class="tab col s3"><a href="#"><p>Tab1 </p></a></li>
+                    <li class="tab col s3"><a href="#"><p>Tab2 </p></a></li>
+                    <li class="tab col s3"><a href="#"><p>Tab3 </p></a></li>
+                    <li class="tab col s3"><a href="#"><p>Tab4 </p></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="cards">
+            <h1 class="section-title">Cards</h1>
+            <div class="white" style="padding: 3%">
+                <p>Cards are used for displaying Courses.
+                    Cards are a convenient means of displaying content composed of different types of objects.
+                    They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably,
+                    like photos with captions of variable length.
+
+                </p>
+                <p>Background color - Bismark (#546e7a)</p>
+                <p>Font color - White (#FFFFFF)</p>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Course Name</span>
+                            </div>
+                                <a class="col s6 btn" onclick="register()">Register</a>
+                                <a class="col s6 btn" onclick="register()">View</a>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</main>
+<ul id="nav-mobile" class="side-nav fixed">
+
+    <li class="bold" style="padding-top: 20%"><a href="#about" class="waves-effect waves-teal"></a></li>
+    <li class="no-padding">
+    <li class="bold"><a href="#about" class="waves-effect waves-teal">About</a></li>
+    <li class="bold"><a href="#color" class="waves-effect waves-teal">Color</a></li>
+    <li class="bold"><a href="#breadcrumb" class="waves-effect waves-teal">Breadcrumbs</a></li>
+    <li class="bold"><a href="#buttons" class="waves-effect waves-teal">Buttons</a></li>
+    <li class="bold"><a href="#forms" class="waves-effect waves-teal">Forms</a></li>
+    <li class="bold"><a href="#tabs" class="waves-effect waves-teal">Tabs</a></li>
+    <li class="bold"><a href="#cards" class="waves-effect waves-teal">Cards</a></li>
+    <li class="bold"><a href="#alerts" class="waves-effect waves-teal">Alerts</a></li>
+    <li class="bold"><a href="#chart" class="waves-effect waves-teal">Charts</a></li>
+    <li class="bold"><a href="#icons" class="waves-effect waves-teal">Icons</a></li>
+</ul>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/gradeChart.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     function init() {
         localStorage.clear();
     }
