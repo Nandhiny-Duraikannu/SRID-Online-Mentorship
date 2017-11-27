@@ -71,11 +71,11 @@ nav.clean{
 }
 
 .breadcrumb {
-	font-size: 4vw;
+	font-size: 3.75vw;
 }
 
 .breadcrumb:before {
-	font-size: 4vw;
+	font-size: 3vw;
     color: rgba(0,0,0,0.7);
 }
 
@@ -162,4 +162,8 @@ pre {
 	text-align: center;
 	font-size: 14px;
 	padding-top: 140px;
+}
+
+#userName {
+	font-weight: 900;
 }
