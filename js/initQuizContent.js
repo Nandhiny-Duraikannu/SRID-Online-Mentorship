@@ -1,8 +1,8 @@
 $(function () {
     function init() {
-        let quizInd = localStorage.getItem('quizInd');
-        let status = localStorage.getItem("status");
-        let breadcrumbDom = $('#quizContentBreadCrumb');
+        const quizInd = localStorage.getItem('quizInd');
+        const status = localStorage.getItem("status");
+        const breadcrumbDom = $('#quizContentBreadCrumb');
 
         if (status === "tutor") {
             breadcrumbDom

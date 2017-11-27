@@ -1,7 +1,7 @@
 $(function () {
     function init() {
-        let breadcrumbDom = $("#scheduleMeetingBreadCrumb");
-        let status = localStorage.getItem("status");
+        const breadcrumbDom = $("#scheduleMeetingBreadCrumb");
+        const status = localStorage.getItem("status");
 
         if (status === "tutor") {
             breadcrumbDom
@@ -21,7 +21,7 @@ $(function () {
 
 function confirm() {
     if (typeof (Storage) !== "undefined") {
-        let date = $('#meetingDate').val();
+        const date = $('#meetingDate').val();
         localStorage.setItem('meetingDate', date);
         localStorage.setItem("events", "meeting");
         window.location = "meeting-detail.html";

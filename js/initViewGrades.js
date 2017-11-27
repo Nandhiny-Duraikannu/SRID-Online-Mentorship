@@ -1,8 +1,8 @@
 $(function () {
     function init() {
-        let status = localStorage.getItem("status");
-        let breadcrumbDom = $("#viewGradesBreadCrumb");
-        let tutorBtnDom = $('#tutorButton');
+        const status = localStorage.getItem("status");
+        const breadcrumbDom = $("#viewGradesBreadCrumb");
+        const tutorBtnDom = $('#tutorButton');
 
         if (status === "tutor") {
             breadcrumbDom

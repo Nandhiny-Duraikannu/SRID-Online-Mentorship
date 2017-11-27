@@ -1,10 +1,10 @@
 $(function () {
     function init() {
-        let video = localStorage.getItem("video");
-        let courseTitle = $('#courseTitle');
-        let videoLink = $('#videoLink');
-        let content1 = $('#test-swipe-1');
-        let content2 = $('#test-swipe-2');
+        const video = localStorage.getItem("video");
+        const courseTitle = $('#courseTitle');
+        const videoLink = $('#videoLink');
+        const content1 = $('#test-swipe-1');
+        const content2 = $('#test-swipe-2');
 
         if (video === "default") {
             courseTitle.text("Cloud Computing - 1.2 GCP");
@@ -36,7 +36,7 @@ $(function () {
 });
 
 function changeVideo() {
-    let video = localStorage.getItem("video");
+    const video = localStorage.getItem("video");
     if (video === "default") {
         localStorage.setItem("video", "socket");
     } else {
