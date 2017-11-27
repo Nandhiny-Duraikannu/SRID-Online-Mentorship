@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
     function init() {
-        Materialize.toast('Successfully scheduled the meeting!', 5000);
+        Materialize.toast('Successfully added the meeting!', 5000);
 
         let meetingDate = localStorage.getItem('meetingDate');
         let status = localStorage.getItem("status");
@@ -14,12 +14,11 @@ $(function() {
         if (status === "tutor") {
             breadcrumbDom
                 .append('<a class="breadcrumb">...</a>')
-                .append('<a href="student-list.html" class="breadcrumb">Students</a>')
                 .append('<a href="view-grades.html" class="breadcrumb">Andrew</a>')
                 .append('<a class="breadcrumb">Meeting</a>');
         } else {
             breadcrumbDom
-                .append('<a href="dashboard.html" class="breadcrumb">Dashboard</a>')
+                .append('<a class="breadcrumb">...</a>')
                 .append('<a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>')
                 .append('<a class="breadcrumb">Meeting</a>');
         }
@@ -31,8 +30,8 @@ function joinMeeting() {
     localStorage.setItem("events", "default");
     let $toastContent = $('<span>meeting...</span>')
         .add($('<div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>'))
-        .add($('<button class="btn-flat toast-action" onclick="redirectToInformation()">Complete</button>'));
-        Materialize.toast($toastContent);
+        .add($('<button class="btn-flat toast-action" onclick="redirectToInformation()">Done</button>'));
+    Materialize.toast($toastContent);
 }
 
 function redirectToInformation() {

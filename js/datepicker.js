@@ -5,4 +5,4 @@ $('.datepicker').pickadate({
     clear: 'Clear',
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
-  });
+});

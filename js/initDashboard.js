@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     function init() {
         let status = localStorage.getItem("status");
         let events = localStorage.getItem("events");
@@ -16,22 +16,28 @@ $(function() {
             eventsDom.append("<div class='collapsible-header'><a href='meeting-detail.html'>1:1 meeting with Andrew</a></div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
             <div class="card-content white-text" >\
-                <span class="card-title" ><a class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                <span class="card-title" ><a class="grey-text text-lighten-3" href="course-dashboard.html">\
                 <i class="material-icons">cloud</i> sC1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "tutor" && events === "default" && courses === "addedCourse") {
-            Materialize.toast('Successfully register the course!', 5000);
+            let isRegistered = localStorage.getItem("isRegistered");
+            console.log(isRegistered)
+            if (isRegistered === "default") {
+                localStorage.setItem("isRegistered", "Yes");
+                Materialize.toast('Successfully register the course!', 5000);
+            }
+
             eventsDom.append("<div class='collapsible-header'>No upcoming events!</div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
             <div class="card-content white-text" >\
-                <span class="card-title" ><a href="course-dashboard.html" class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                <span class="card-title" ><a href="course-dashboard.html" class="grey-text text-lighten-3" >\
                 <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "tutor" && events === "meeting" && courses === "addedCourse") {
             eventsDom.append("<div class='collapsible-header'><a href='meeting-detail.html'>1:1 meeting with Andrew</a></div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
             <div class="card-content white-text" >\
-                <span class="card-title" ><a href="course-dashboard.html" class="grey-text text-lighten-3" href="CC_Tutor.html">\
+                <span class="card-title" ><a href="course-dashboard.html" class="grey-text text-lighten-3">\
                 <i class="material-icons">cloud</i> C1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "student" && events === "default" && courses === "default") {
@@ -45,15 +51,15 @@ $(function() {
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" onclick="setDisabledBtn()">\
                     <i class="material-icons">insert_chart</i> C4. Machine Learning</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" onclick="setDisabledBtn()">\
                     <i class="material-icons">trending_up</i> C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
-                    
+
         } else if (status === "student" && events === "meeting" && courses === "default") {
             eventsDom
                 .append('<div class="collapsible-header"><a href="meeting-detail.html">1:1 meeting with Emily</a></div>')
@@ -66,17 +72,17 @@ $(function() {
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3"">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" onclick="setDisabledBtn()">\
                     <i class="material-icons"> insert_chart</i>C4. Machine Learning</a></span>\
                     </div></div>')
                 .append('<div class="card blue-grey darken-1">\
                     <div class="card-content white-text" >\
-                    <span class="card-title" ><a class="grey-text text-lighten-3"">\
+                    <span class="card-title" ><a class="grey-text text-lighten-3" onclick="setDisabledBtn()">\
                     <i class="material-icons"> trending_up</i>C5. An Intuitive Introduction to Probability</a></span>\
                     </div></div>');
-                    
+
         }
-    
+
     }
     init();
 });

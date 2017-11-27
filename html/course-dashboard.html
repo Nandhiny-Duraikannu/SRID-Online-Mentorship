@@ -20,30 +20,34 @@
       <a href="#" class="brand-logo">Online Mentorship</a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="">Profile</a>
+          <a onclick="setDisabledBtn()">Profile</a>
         </li>
         <li>
-          <a href="">My Courses</a>
+          <a onclick="setDisabledBtn()">My Courses</a>
         </li>
         <li>
-          <a href="">Forum</a>
+          <a onclick="setDisabledBtn()">Forum</a>
         </li>
         <li>
-          <a href="">Logout</a>
+          <a href="../index.html">Logout</a>
         </li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li>
-          <a href="">Profile</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">account_box</i>Profile</a>
         </li>
         <li>
-          <a href="">My Courses</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">list</i>My Courses</a>
         </li>
         <li>
-          <a href="">Forum</a>
+          <a onclick="setDisabledBtn()">
+            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">forum</i>Forum</a>
         </li>
         <li>
-          <a href="">Logout</a>
+          <a href="../index.html">
+            <i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
         </li>
       </ul>
     </div>
@@ -57,14 +61,17 @@
     </div>
   </nav>
   <main>
-      <canvas id="myChart" width="400" height="250"></canvas>          
-    <div class="container" id="courseDashboardButton">
-      
+    <div class="container">
+      <div class="row">
+        <canvas id="myChart"></canvas>
+        <div class="col s12" id="courseDashboardButton">
+
+        </div>
+      </div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="container linkType center">
-      <a href="https://sheershakandwal.wixsite.com/olms">Our Mission</a> |
       <a href="https://sheershakandwal.wixsite.com/olms">Our Team</a> |
       <a href="https://sheershakandwal.wixsite.com/olms">Contact</a> |
       <a href="https://sheershakandwal.wixsite.com/olms">Support</a>
@@ -78,5 +85,9 @@
   <script src="../js/materialize.js"></script>
   <script src="../js/initCourseDashboard.js"></script>
   <script src="../js/gradeChartOverall.js"></script>
+  <script src="../js/sideBar.js"></script>
+  <script src="../js/setDisabledBtn.js"></script>
+
 </body>
+
 </html>
