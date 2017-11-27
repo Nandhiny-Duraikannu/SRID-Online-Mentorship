@@ -6,10 +6,10 @@
     const status = localStorage.getItem("status");
 
     if (status === "tutor") {
-      nameDom.text("Emily");
+      nameDom.text("Emily (Tutor)");
       emailDom.text("emily0604@cmu.edu");
     } else {
-      nameDom.text("Andrew");
+      nameDom.text("Andrew (Student)");
       emailDom.text("andrew1212@cmu.edu");
     }
     
