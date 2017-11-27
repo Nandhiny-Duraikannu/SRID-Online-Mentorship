@@ -34,20 +34,16 @@
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li>
-          <a onclick="setDisabledBtn()">
-            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">account_box</i>Profile</a>
+          <a href="">Profile</a>
         </li>
         <li>
-          <a onclick="setDisabledBtn()">
-            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">list</i>My Courses</a>
+          <a href="">My Courses</a>
         </li>
         <li>
-          <a onclick="setDisabledBtn()">
-            <i class="material-icons" id="sidebarIcon" onclick="setDisabledBtn()">forum</i>Forum</a>
+          <a href="">Forum</a>
         </li>
         <li>
-          <a href="../index.html">
-            <i class="material-icons" id="sidebarIcon">power_settings_new</i>Logout</a>
+          <a href="../index.html">Logout</a>
         </li>
       </ul>
     </div>
@@ -66,37 +62,34 @@
   <main>
     <div class="container">
       <div class="row">
-        <h2 class="center">Meeting Detail</h2>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="text" class="validate" value="Emily" disabled>
-          <label for="tutor_name">Tutor</label>
+        <div class="col s12">
+          <h2 class="center">Meeting Detail</h2>
+          
+          <div class="input-field col s12">
+            <input type="text" class="validate" value="Emily" disabled>
+            <label for="tutor_name">Tutor</label>
+          </div>
+          
+          <div class="input-field col s12">
+            <input type="text" class="validate" value="Andrews" disabled>
+            <label for="student_name">Student</label>
+          </div>
+        
+          <div class="input-field col s12">
+            <input type="text" class="validate" value="" disabled id="meetingDateConfirmed">
+            <label for="meetingDate">Date</label>
+          </div>
+          
+          <div class="input-field col s12">
+            <input type="text" class="validate" value="google.xxx.xxx" disabled>
+            <label for="meeting_link">Meeting Link</label>
+          </div>
+          
+          <a class="row waves-effect waves-light btn col s12" onclick="joinMeeting()">Joining Meeting</a>
+         
+          <a class="row waves-effect waves-light btn col s12">CANCEL</a>
+          
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="text" class="validate" value="Andrews" disabled>
-          <label for="student_name">Student</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="text" class="validate" value="" disabled id="meetingDateConfirmed">
-          <label for="meetingDate">Date</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="text" class="validate" value="google.xxx.xxx" disabled>
-          <label for="meeting_link">Meeting Link</label>
-        </div>
-      </div>
-      <div class="row">
-        <a class="waves-effect waves-light btn col s12" onclick="joinMeeting()">Joining Meeting</a>
-      </div>
-      <div class="row">
-        <a class="waves-effect waves-light btn col s12">CANCEL</a>
       </div>
     </div>
   </main>
