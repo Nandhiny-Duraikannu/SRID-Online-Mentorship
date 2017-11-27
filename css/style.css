@@ -26,6 +26,10 @@ main {
     color: #546e78;
 }
 
+#upcomingEvent {
+	padding-top: 5px;
+}
+
 .icon-block {
 	padding: 0 15px;
 }
