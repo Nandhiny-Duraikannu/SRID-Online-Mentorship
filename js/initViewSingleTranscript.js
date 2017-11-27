@@ -1,7 +1,7 @@
 $(function () {
     function init() {
-        let breadcrumbDom = $("#viewSingleTranscriptBreadCrumb");
-        let status = localStorage.getItem("status");
+        const breadcrumbDom = $("#viewSingleTranscriptBreadCrumb");
+        const status = localStorage.getItem("status");
 
         if (status === "tutor") {
             breadcrumbDom

@@ -71,11 +71,11 @@ nav.clean{
 }
 
 .breadcrumb {
-	font-size: 15px;
+	font-size: 4vw;
 }
 
 .breadcrumb:before {
-	font-size: 15px;
+	font-size: 4vw;
     color: rgba(0,0,0,0.7);
 }
 

@@ -1,8 +1,8 @@
 $(function () {
     function init() {
-        let status = localStorage.getItem("status");
-        let breadcrumbDom = $("#viewGradesBreadCrumb");
-        let tutorBtnDom = $('#tutorButton');
+        const status = localStorage.getItem("status");
+        const breadcrumbDom = $("#viewGradesBreadCrumb");
+        const tutorBtnDom = $('#tutorButton');
 
         if (status === "tutor") {
             breadcrumbDom
@@ -15,6 +15,7 @@ $(function () {
 
         } else {
             breadcrumbDom
+                .append('<a class="breadcrumb">...</a>')
                 .append('<a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>')
                 .append('<a class="breadcrumb">View Grades</a>');
         }

@@ -2,13 +2,14 @@ $(function () {
     function init() {
         Materialize.toast('Successfully added the meeting!', 5000);
 
-        let meetingDate = localStorage.getItem('meetingDate');
-        let status = localStorage.getItem("status");
-        let breadcrumbDom = $('#meetingDetailBreadCrumb');
+        const meetingDate = localStorage.getItem('meetingDate');
+        const status = localStorage.getItem("status");
+        const breadcrumbDom = $('#meetingDetailBreadCrumb');
 
         if (meetingDate === "undefined") {
             meetingDate = "no date picked!";
         }
+
         $('#meetingDateConfirmed').val(meetingDate);
 
         if (status === "tutor") {
@@ -28,7 +29,7 @@ $(function () {
 
 function joinMeeting() {
     localStorage.setItem("events", "default");
-    let $toastContent = $('<span>meeting...</span>')
+    const $toastContent = $('<span>Meeting...</span>')
         .add($('<div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>'))
         .add($('<button class="btn-flat toast-action" onclick="redirectToInformation()">Done</button>'));
     Materialize.toast($toastContent);

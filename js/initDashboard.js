@@ -1,11 +1,11 @@
 $(function () {
     function init() {
-        let status = localStorage.getItem("status");
-        let events = localStorage.getItem("events");
-        let courses = localStorage.getItem("courses");
+        const status = localStorage.getItem("status");
+        const events = localStorage.getItem("events");
+        const courses = localStorage.getItem("courses");
 
-        let eventsDom = $(".collapsible li");
-        let coursesDom = $("#courseList");
+        const eventsDom = $(".collapsible li");
+        const coursesDom = $("#courseList");
         if (status === "tutor" && events === "default" && courses === "default") {
             eventsDom.append("<div class='collapsible-header'>No upcoming events!</div>");
             coursesDom.append('<div class="card blue-grey darken-1">\
@@ -20,8 +20,7 @@ $(function () {
                 <i class="material-icons">cloud</i> sC1. Cloud Computing</a></span>\
             </div></div>');
         } else if (status === "tutor" && events === "default" && courses === "addedCourse") {
-            let isRegistered = localStorage.getItem("isRegistered");
-            console.log(isRegistered)
+            const isRegistered = localStorage.getItem("isRegistered");
             if (isRegistered === "default") {
                 localStorage.setItem("isRegistered", "Yes");
                 Materialize.toast('Successfully register the course!', 5000);

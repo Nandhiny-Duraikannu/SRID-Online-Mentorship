@@ -1,13 +1,13 @@
 $(function () {
     function init() {
-        let status = localStorage.getItem("status");
-        let buttonDom = $('#courseDashboardButton');
+        const status = localStorage.getItem("status");
+        const buttonDom = $('#courseDashboardButton');
         if (status === "tutor") {
             buttonDom
                 .append('<a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">lecture videos</a>')
                 .append('<a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">create quiz</a>')
                 .append('<a href="student-list.html" class="row waves-effect waves-light btn col s12">student list</a>')
-                .append('<a href="view-transcript.html" class="row waves-effect waves-light btn col s12">view transcript</a>')
+                .append('<a href="view-transcript.html" class="row waves-effect waves-light btn col s12">view meeting transcript</a>')
         } else {
             buttonDom
                 .append('<a class="row waves-effect waves-light btn col s12" onclick="viewVideo()">lecture videos</a>')

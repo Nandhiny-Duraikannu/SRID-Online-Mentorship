@@ -1,8 +1,8 @@
 $(function () {
     function init() {
-        let meetingDate = localStorage.getItem("meetingDate");
-        let breadcrumbDom = $("#meetingInformationBreadCrumb");
-        let status = localStorage.getItem("status");
+        const meetingDate = localStorage.getItem("meetingDate");
+        const breadcrumbDom = $("#meetingInformationBreadCrumb");
+        const status = localStorage.getItem("status");
 
         if (meetingDate === "undefined") {
             meetingDate = "no date picked!";
