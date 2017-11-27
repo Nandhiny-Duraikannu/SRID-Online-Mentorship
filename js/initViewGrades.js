@@ -15,6 +15,7 @@ $(function () {
 
         } else {
             breadcrumbDom
+                .append('<a class="breadcrumb">...</a>')
                 .append('<a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>')
                 .append('<a class="breadcrumb">View Grades</a>');
         }
