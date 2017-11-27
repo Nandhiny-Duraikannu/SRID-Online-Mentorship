@@ -13,10 +13,8 @@ $(function () {
                 .append('<div class="row center"><a href="../html/add-grades.html" class="waves-effect waves-light btn col s12">Add Grades</a></div>\
                         <div class="row center"><a href="schedule-meeting.html" class="waves-effect waves-light btn col s12">Schedule Meeting</a></div>');
 
-
         } else {
             breadcrumbDom
-                .append('<a class="breadcrumb">...</a>')
                 .append('<a href="course-dashboard.html" class="breadcrumb">Cloud Computing</a>')
                 .append('<a class="breadcrumb">View Grades</a>');
         }
