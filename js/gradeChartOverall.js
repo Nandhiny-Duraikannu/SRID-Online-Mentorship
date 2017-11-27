@@ -1,5 +1,5 @@
-let canvas = $('#myChart');
-let data0 = {
+const canvas = $('#myChart');
+const data0 = {
     labels: ["Quiz 1", "Quiz 2", "Quiz 3", "Quiz 4"],
     datasets: [
         {
@@ -25,7 +25,7 @@ let data0 = {
         }
     ]
 };
-let data1 = {
+const data1 = {
     labels: ["Quiz 1", "Quiz 2", "Quiz 3", "Quiz 4"],
     datasets: [
         {
@@ -73,7 +73,7 @@ let data1 = {
     ]
 };
 
-let option = {
+const option = {
     showLines: true
 };
 
@@ -85,14 +85,14 @@ function adddata() {
 
 $(function () {
     function init() {
-        let status = localStorage.getItem('status');
+        const status = localStorage.getItem('status');
         if (status === "student") {
-            let myLineChart = Chart.Line(canvas, {
+            const myLineChart = Chart.Line(canvas, {
                 data: data1,
                 options: option
             });
         } else {
-            let myLineChart = Chart.Line(canvas, {
+            const myLineChart = Chart.Line(canvas, {
                 data: data0,
                 options: option
             });

@@ -1,7 +1,7 @@
 $(function () {
     function init() {
-        let status = localStorage.getItem("status");
-        let transcriptContentDom = $("#transcriptContent");
+        const status = localStorage.getItem("status");
+        const transcriptContentDom = $("#transcriptContent");
 
         if (status === "tutor") {
             transcriptContentDom

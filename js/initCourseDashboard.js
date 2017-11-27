@@ -1,7 +1,7 @@
 $(function () {
     function init() {
-        let status = localStorage.getItem("status");
-        let buttonDom = $('#courseDashboardButton');
+        const status = localStorage.getItem("status");
+        const buttonDom = $('#courseDashboardButton');
         if (status === "tutor") {
             buttonDom
                 .append('<a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">lecture videos</a>')
