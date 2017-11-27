@@ -3,7 +3,12 @@ function register() {
     if (status === "student") {
         Materialize.toast('You already registered Cloud Computing!', 5000);
     } else {
-        localStorage.setItem("courses", "addedCourse");
-        window.location = "dashboard.html";
+        let courses = localStorage.getItem("courses");
+        if (courses === "default") {
+            localStorage.setItem("courses", "addedCourse");
+            window.location = "dashboard.html";
+        } else {
+            Materialize.toast('You already registered Cloud Computing!', 5000);
+        }
     }
 }
