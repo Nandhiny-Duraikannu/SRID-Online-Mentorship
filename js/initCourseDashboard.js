@@ -14,7 +14,7 @@ $(function () {
                 .append('<a href="view-grades.html" class="row waves-effect waves-light btn col s12">view grades</a>')
                 .append('<a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">take quiz</a>')
                 .append('<a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">forum</a>')
-                .append('<a href="schedule-meeting.html" class="row swaves-effect waves-light btn col s12">scedule 1:1 meeting</a>')
+                .append('<a href="schedule-meeting.html" class="row swaves-effect waves-light btn col s12">schedule 1:1 meeting</a>')
                 .append('<a href="view-transcript.html" class="row waves-effect waves-light btn col s12">view meeting transcripts</a>');
         }
     }
