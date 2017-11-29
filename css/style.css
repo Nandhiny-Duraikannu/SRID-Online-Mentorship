@@ -49,6 +49,7 @@ main {
 
 #redName {
 	color: red;
+	text-decoration: underline;
 }
 
 nav {
