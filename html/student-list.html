@@ -39,7 +39,7 @@
               <img src="http://materializecss.com/images/office.jpg">
             </div>
             <a href="#!user">
-              <img class="circle" src="http://materializecss.com/images/yuna.jpg">
+              <img class="circle" id="userImage">
             </a>
             <a href="#!name">
               <span class="white-text name" id="userName"></span>
@@ -86,11 +86,41 @@
       </div>
       <div class="row">
         <div class="col s12">
-          <a href="view-grades.html" class="row waves-effect waves-light btn col s12" id="redName">Andrew</a>
-          <a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">Jon Snow</a>
-          <a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">Harry Potter</a>
-          <a class="row waves-effect waves-light btn col s12" onclick="setDisabledBtn()">Alice Cooper</a>
-          <a class="waves-effect waves-light btn col s12" onclick="setDisabledBtn()">Emma Stone</a>
+          <div class="card horizontal" onclick="window.location = 'view-grades.html';">
+            <div class="card-image">
+              <img src="../images/03.png">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="card-title">Andrew</div>
+                <p>Need Help!</p>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="view-grades.html" class="row waves-effect waves-light btn col s12" id="redName">Andrew</a> -->
+        
+          <div class="card horizontal" onclick="setDisabledBtn()">
+            <div class="card-image">
+              <img src="../images/04.png">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="card-title">Harry Potter</div>
+                <p>Excellent!</p>
+              </div>
+            </div>
+          </div>
+          <div class="card horizontal" onclick="setDisabledBtn()">
+            <div class="card-image">
+              <img src="../images/05.png">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="card-title">Takeshi</div>
+                <p>Average</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -108,7 +138,6 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/sideBar.js"></script>
-  <script src="../js/setDisabledBtn.js"></script>
   <script src="../js/setDisabledBtn.js"></script>
 
 </body>
