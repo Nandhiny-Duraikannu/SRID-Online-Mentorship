@@ -35,7 +35,7 @@ We are a bunch of motivated Carnegie Mellon Students determined to provide quali
 ## Style Guide
 please check this link: https://stu1130.github.io/SRID-Online-Mentorship/html/style-guide.html
 ## Limitation
-- The app didn't use real backend. So the data inside the app is hardcoded. For example, add grade would only allow you add 35
-- We didn't integrate our meeting system with 3nd party software like google hangout
-- 
-
+- The app didn't use real backend. So the data inside the app is hardcoded. For example, the button "add grade" would only allow you add 35. 
+- We didn't integrate our meeting system with 3nd party software like google hangout.
+- we didn't have pagination for any list
+- We don't validate the data format. For example, the meeting date could be the day before today.
