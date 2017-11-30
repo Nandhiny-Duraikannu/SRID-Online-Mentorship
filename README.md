@@ -1,8 +1,8 @@
 # SRID-Online-Mentorship
-This repo is for SRID high fidelity prototype.
+This repo is for SRID high fidelity prototype. 
 
 ## Operation Instructions
-Tutor
+#### Tutor
 1. login as a tutor
 2. view course detail and register to teach (Cloud Computing)
 3. enter course dashboard (Cloud Computing)
@@ -12,7 +12,7 @@ Tutor
 7. schedule 1:1 meeting
 8. view meeting transcript
 9. use the sidebar to logout
-Student
+#### Student
 1. login as a student
 2. enter cloud computing dashboard
 3. view grade with button add grade""
