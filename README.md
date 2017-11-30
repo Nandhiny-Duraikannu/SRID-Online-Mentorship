@@ -1,19 +1,20 @@
 # SRID-Online-Mentorship
 This repo is for SRID high fidelity prototype. 
 
+We are a bunch of motivated Carnegie Mellon Students determined to provide quality education and ensure engagement of the student. Being the tech geeks we are, we have ensured the the learning is smooth and effective.
 ## Operation Instructions
 #### Tutor
-1. login as a tutor
+1. login as a tutor with the button "I'm a tutor"
 2. view course detail and register to teach (Cloud Computing)
 3. enter course dashboard (Cloud Computing)
-4. view student list
+4. view student list with the button "student list"
 5. identify the student who is not well performed.
-6. add grade for student
+6. add grade for student with the button "add grade"
 7. schedule 1:1 meeting
-8. view meeting transcript
+8. view meeting transcript with the button "view transcript"
 9. use the sidebar to logout
 #### Student
-1. login as a student
+1. login as a student with the button "I'm a student"
 2. enter cloud computing dashboard
 3. view grade with button add grade""
 4. view grade content with button "view content"
@@ -34,5 +35,7 @@ This repo is for SRID high fidelity prototype.
 ## Style Guide
 please check this link: https://stu1130.github.io/SRID-Online-Mentorship/html/style-guide.html
 ## Limitation
-
+- The app didn't use real backend. So the data inside the app is hardcoded. For example, add grade would only allow you add 35
+- We didn't integrate our meeting system with 3nd party software like google hangout
+- 
 
