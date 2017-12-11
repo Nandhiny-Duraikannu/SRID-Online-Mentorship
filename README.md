@@ -3,6 +3,7 @@ This repo is for SRID high-fidelity prototype.
 
 We are a bunch of motivated Carnegie Mellon Students determined to provide quality education and ensure engagement of the student. Being the tech geeks we are, we have ensured that the learning is smooth and effective.
 ## Operation Instructions
+https://stu1130.github.io/SRID-Online-Mentorship/
 #### Tutor
 1. Login as a tutor with the button "I'm a tutor"
 2. View course detail and register to teach *Cloud Computing*
